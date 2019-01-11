@@ -5,7 +5,7 @@ import * as d3 from "d3";
 import { trackIds, milestones, tracks, categoryColorScale } from "../constants";
 import type { TrackId, Milestone, MilestoneMap } from "../constants";
 
-const width = 540;
+const width = 400;
 const arcMilestones = milestones.slice(1); // we'll draw the '0' milestone with a circle, not an arc.
 
 type Props = {
@@ -14,7 +14,7 @@ type Props = {
   handleTrackMilestoneChangeFn: (TrackId, Milestone) => void
 };
 
-class NightingaleChart extends React.Component<Props> {
+class RadarChart extends React.Component<Props> {
   colorScale: any;
   radiusScale: any;
   arcFn: any;
@@ -27,8 +27,8 @@ class NightingaleChart extends React.Component<Props> {
     this.radiusScale = d3
       .scaleBand()
       .domain(arcMilestones)
-      .range([0.16 * width, 0.45 * width])
-      .paddingInner(0.4);
+      .range([0.15 * width, 0.45 * width])
+      .paddingInner(0.1);
 
     this.arcFn = d3
       .arc()
@@ -38,34 +38,10 @@ class NightingaleChart extends React.Component<Props> {
       )
       .startAngle(-Math.PI / trackIds.length)
       .endAngle(Math.PI / trackIds.length)
-      .padAngle(Math.PI / 20)
-      .padRadius(200)
-      .cornerRadius(0);
+      .padAngle(Math.PI / 200)
+      .padRadius(0.45 * width)
+      .cornerRadius(2);
   }
-  // Original Math for Reference
-  // constructor(props: *) {
-  //   super(props);
-
-  //   this.colorScale = d3.scaleSequential(d3.interpolateWarm).domain([0, 5]);
-
-  //   this.radiusScale = d3
-  //     .scaleBand()
-  //     .domain(arcMilestones)
-  //     .range([0.15 * width, 0.45 * width])
-  //     .paddingInner(0.1);
-
-  //   this.arcFn = d3
-  //     .arc()
-  //     .innerRadius(milestone => this.radiusScale(milestone))
-  //     .outerRadius(
-  //       milestone => this.radiusScale(milestone) + this.radiusScale.bandwidth()
-  //     )
-  //     .startAngle(-Math.PI / trackIds.length)
-  //     .endAngle(Math.PI / trackIds.length)
-  //     .padAngle(Math.PI / 200)
-  //     .padRadius(0.45 * width)
-  //     .cornerRadius(0);
-  // }
 
   render() {
     const currentMilestoneId = this.props.milestoneByTrack[
@@ -80,32 +56,20 @@ class NightingaleChart extends React.Component<Props> {
           svg {
             width: ${width}px;
             height: ${width}px;
-            margin-left: ${`${width}` / -8}px;
           }
           .track-milestone {
-            fill: #f7f8f9;
+            fill: #eee;
             cursor: pointer;
-            overflow: visible;
           }
-          .track-milestone-current {
-            filter: url(#shadow);
-            stroke: rgba(255, 255, 255, 0.6);
-            stroke-width: 4;
-            stroke-alignment: center;
-            stroke-linecap: round;
-            box-shadow: 0px 0px 16px rgba(11, 95, 255, 0.64);
-          }
+          .track-milestone-current,
           .track-milestone:hover {
-            fill: #c4cacb;
+            stroke: #000;
+            stroke-width: 4px;
+            stroke-linejoin: round;
           }
         `}</style>
         <svg>
-          <defs>
-            <filter id="shadow">
-              <feDropShadow dx="0" dy="0" stdDeviation="2" />
-            </filter>
-          </defs>
-          <g transform={`translate(${width / 2},${width / 2}) rotate(-126)`}>
+          <g transform={`translate(${width / 2},${width / 2}) rotate(-33.75)`}>
             {trackIds.map((trackId, i) => {
               const isCurrentTrack = trackId == this.props.focusedTrackId;
               return (
@@ -143,7 +107,7 @@ class NightingaleChart extends React.Component<Props> {
                     );
                   })}
                   <circle
-                    r="0"
+                    r="8"
                     cx="0"
                     cy="-50"
                     style={{
@@ -169,4 +133,4 @@ class NightingaleChart extends React.Component<Props> {
   }
 }
 
-export default NightingaleChart;
+export default RadarChart;
