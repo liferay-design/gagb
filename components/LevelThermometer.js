@@ -11,13 +11,13 @@ import React from "react";
 import type { MilestoneMap } from "../constants";
 
 const margins = {
-  top: 30,
+  top: 0,
   right: 20,
-  bottom: 30,
-  left: 10
+  bottom: 0,
+  left: 0
 };
-const height = 80;
-const width = 550;
+const height = 24;
+const width = 1024;
 
 type Props = {
   milestoneByTrack: MilestoneMap
@@ -115,15 +115,17 @@ class LevelThermometer extends React.Component<Props> {
       <figure>
         <style jsx>{`
           figure {
-            margin: 0 0 0 -10px;
+            margin: 0 auto;
+            width: 64rem;
+            height: 24px;
           }
           svg {
             width: ${width}px;
-            height: ${height + 10}px;
+            height: ${height}px;
           }
         `}</style>
         <svg>
-          <g transform={`translate(${margins.left},${margins.top})`}>
+          <g>
             {categoryPoints.map((categoryPoint, i) => {
               const x = this.pointScale(cumulativePoints);
               const width =

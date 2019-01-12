@@ -32,8 +32,8 @@ const hashToState = (hash: String): ?SnowflakeAppState => {
   trackIds.forEach((trackId, i) => {
     result.milestoneByTrack[trackId] = coerceMilestone(Number(hashValues[i]));
   });
-  if (hashValues[16]) result.name = decodeURI(hashValues[16]);
-  if (hashValues[17]) result.title = decodeURI(hashValues[17]);
+  if (hashValues[10]) result.name = decodeURI(hashValues[10]);
+  if (hashValues[11]) result.title = decodeURI(hashValues[11]);
   return result;
 };
 
@@ -79,19 +79,19 @@ const emptyState = (): SnowflakeAppState => {
 
 const defaultState = (): SnowflakeAppState => {
   return {
-    name: "Cersei Lannister",
-    title: "Staff Engineer",
+    name: "[Enter Name]",
+    title: "Product Designer",
     milestoneByTrack: {
-      RESEARCH: 1,
-      ENGINEERING: 2,
-      INTERACTION: 3,
-      STRATEGY: 2,
-      VISUAL: 4,
-      COLLABORATION: 1,
-      EXCELLENCE: 1,
-      LEADERSHIP: 4,
-      GROWTH: 3,
-      EVANGELISM: 2
+      RESEARCH: 0,
+      ENGINEERING: 0,
+      INTERACTION: 0,
+      STRATEGY: 0,
+      VISUAL: 0,
+      COLLABORATION: 0,
+      EXCELLENCE: 0,
+      LEADERSHIP: 0,
+      GROWTH: 0,
+      EVANGELISM: 0
     },
     focusedTrackId: "RESEARCH"
   };
@@ -131,6 +131,9 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
     return (
       <main>
         <style jsx global>{`
+          body {
+            margin: 0;
+          }
           body,
           input,
           textarea,
@@ -139,22 +142,27 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
             font-family: "Source Sans Pro";
           }
           main {
-            width: 960px;
+            width: 100%;
             margin: 0 auto;
           }
           .name-input {
             border: none;
+            background: #f7f8f9;
             display: block;
-            border-bottom: 2px solid #fff;
-            font-size: 30px;
+            border-bottom: 2px solid #f7f8f9;
+            font-size: 3rem;
             line-height: 40px;
             font-weight: bold;
             width: 380px;
             margin-bottom: 10px;
           }
+          .url-input {
+            margin: 2rem;
+            width: 80%;
+          }
           .name-input:hover,
           .name-input:focus {
-            border-bottom: 2px solid #ccc;
+            border-bottom: 2px solid #e8e8e7;
             outline: 0;
           }
           a {
@@ -162,13 +170,21 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
             text-decoration: none;
           }
         `}</style>
-        <div style={{ margin: "19px auto 0", width: 142 }}>
-          <a href="https://liferay.design/" target="_blank">
-            <Wordmark />
-          </a>
-        </div>
-        <div style={{ display: "flex" }}>
-          <div style={{ flex: 1 }}>
+        <header
+          style={{
+            background: "#f7f8f9",
+            padding: "7rem 0 1rem",
+            width: "100%"
+          }}
+        >
+          <div
+            style={{
+              justifyContent: "space-between",
+              display: "flex",
+              maxWidth: "64rem",
+              margin: "0 auto 2rem"
+            }}
+          >
             <form>
               <input
                 type="text"
@@ -176,6 +192,8 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
                 value={this.state.name}
                 onChange={e => this.setState({ name: e.target.value })}
                 placeholder="Name"
+                onFocus={e => e.target.select()}
+                // onClick={e => e.target.select()}
               />
               <TitleSelector
                 milestoneByTrack={this.state.milestoneByTrack}
@@ -183,6 +201,20 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
                 setTitleFn={title => this.setTitle(title)}
               />
             </form>
+            <PointSummaries milestoneByTrack={this.state.milestoneByTrack} />
+          </div>
+          <div
+            style={{
+              background: "#e8e8e7",
+              width: "100%",
+              margin: "0 auto"
+            }}
+          >
+            {/* <LevelThermometer milestoneByTrack={this.state.milestoneByTrack} /> */}
+          </div>
+        </header>
+        <div style={{ display: "flex", width: "64rem", margin: "0 auto 30vh" }}>
+          <div>
             <NightingaleChart
               milestoneByTrack={this.state.milestoneByTrack}
               focusedTrackId={this.state.focusedTrackId}
@@ -190,11 +222,11 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
                 this.handleTrackMilestoneChange(track, milestone)
               }
             />
-            <TrackSelector
+            {/* <TrackSelector
               milestoneByTrack={this.state.milestoneByTrack}
               focusedTrackId={this.state.focusedTrackId}
               setFocusedTrackIdFn={this.setFocusedTrackId.bind(this)}
-            />
+            /> */}
             <KeyboardListener
               selectNextTrackFn={this.shiftFocusedTrack.bind(this, 1)}
               selectPrevTrackFn={this.shiftFocusedTrack.bind(this, -1)}
@@ -207,10 +239,28 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
                 -1
               )}
             />
+            <div
+              style={{
+                display: "flex",
+                marginLeft: "-45px",
+                textAlign: "center",
+                flexDirection: "column",
+                alignItems: "center"
+              }}
+            >
+              <div style={{ flex: 1, color: "#7d8b94" }}>
+                Learn how to use this tool:{" "}
+                <a
+                  href="https://liferay.design/handbook/grow-and-get-better"
+                  target="_blank"
+                  style={{ color: "#0b5fff", fontWeight: "bold" }}
+                >
+                  Grow at Liferay
+                </a>
+              </div>
+            </div>
           </div>
-          <div style={{ flex: 0 }}>
-            <PointSummaries milestoneByTrack={this.state.milestoneByTrack} />
-            <LevelThermometer milestoneByTrack={this.state.milestoneByTrack} />
+          <div style={{ flex: 1, margin: "6rem 0 0 4rem" }}>
             <Track
               milestoneByTrack={this.state.milestoneByTrack}
               trackId={this.state.focusedTrackId}
@@ -218,30 +268,6 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
                 this.handleTrackMilestoneChange(track, milestone)
               }
             />
-          </div>
-        </div>
-        <div style={{ display: "flex", paddingBottom: "20px" }}>
-          <div style={{ flex: 1 }}>
-            Made with ❤️ by{" "}
-            <a href="https://medium.engineering" target="_blank">
-              Medium Eng
-            </a>
-            . Learn about the{" "}
-            <a
-              href="https://medium.com/s/engineering-growth-framework"
-              target="_blank"
-            >
-              growth framework
-            </a>
-            . Get the{" "}
-            <a href="https://github.com/Medium/snowflake" target="_blank">
-              source code
-            </a>
-            . Read the{" "}
-            <a href="https://medium.com/p/85e078bc15b7" target="_blank">
-              terms of service
-            </a>
-            .
           </div>
         </div>
       </main>

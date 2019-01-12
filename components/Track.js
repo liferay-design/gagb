@@ -21,7 +21,6 @@ class Track extends React.Component<Props> {
           div.track {
             margin: 0 0 20px 0;
             padding-bottom: 20px;
-            border-bottom: 2px solid #ccc;
           }
           h2 {
             margin: 0 0 10px 0;
@@ -41,6 +40,10 @@ class Track extends React.Component<Props> {
           }
           ul {
             line-height: 1.5em;
+            padding-left: 1.5rem;
+          }
+          li {
+            margin-bottom: 0.4rem;
           }
         `}</style>
         <h2>{track.displayName}</h2>
@@ -76,12 +79,12 @@ class Track extends React.Component<Props> {
                                 )
                               }
                               style={{
-                                border: `4px solid ${
+                                boxShadow: `${
                                   milestone === currentMilestoneId
-                                    ? "#004AD7"
+                                    ? "0 0 8px 1px rgba(11, 95, 255, .8)"
                                     : isMet
                                     ? categoryColorScale(track.category)
-                                    : "#f7f8f9"
+                                    : "0 0 0 #f7f8f9"
                                 }`,
                                 background: isMet
                                   ? categoryColorScale(track.category)

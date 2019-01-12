@@ -647,10 +647,11 @@ export const totalPointsFromMilestoneMap = (
 export const categoryColorScale = d3
   .scaleOrdinal()
   .domain(categoryIds)
-  .range(["#0b5fff", "#7d8b94", "#e1439f", "#e54552"]);
+  .range(["#0b5fff", "#7d8b94"]);
 
 export const titles = [
-  { label: "Associate Product Designer", minPoints: 0, maxPoints: 16 },
+  { label: "Add points to see titles", minPoints: 0, maxPoints: 0 },
+  { label: "Associate Product Designer", minPoints: 1, maxPoints: 16 },
   { label: "Product Designer", minPoints: 17, maxPoints: 35 },
   { label: "Senior Product Designer", minPoints: 36, maxPoints: 57 },
   { label: "Senior Product Designer, Manager", minPoints: 36, maxPoints: 57 },

@@ -75,12 +75,12 @@ class NightingaleChart extends React.Component<Props> {
       <figure>
         <style jsx>{`
           figure {
-            margin: 0;
+            margin: 4rem 0;
           }
           svg {
             width: ${width}px;
             height: ${width}px;
-            margin-left: ${`${width}` / -8}px;
+            margin-left: ${`${width}` / -12}px;
           }
           .track-milestone {
             fill: #f7f8f9;
@@ -89,20 +89,26 @@ class NightingaleChart extends React.Component<Props> {
           }
           .track-milestone-current {
             filter: url(#shadow);
-            stroke: rgba(255, 255, 255, 0.6);
-            stroke-width: 4;
-            stroke-alignment: center;
-            stroke-linecap: round;
-            box-shadow: 0px 0px 16px rgba(11, 95, 255, 0.64);
+            stroke: rgba(0, 0, 0, 0.16);
+            stroke-width: 0;
           }
           .track-milestone:hover {
             fill: #c4cacb;
           }
+          .label {
+            transform: translate(0, -264), rotate(180);
+          }
         `}</style>
         <svg>
           <defs>
-            <filter id="shadow">
-              <feDropShadow dx="0" dy="0" stdDeviation="2" />
+            <filter id="shadow" x="-40%" width="180%" y="-40%" height="180%">
+              <feDropShadow
+                dx="0"
+                dy="0"
+                floodColor="#0b5fff"
+                floodOpacity="1"
+                stdDeviation="4"
+              />
             </filter>
           </defs>
           <g transform={`translate(${width / 2},${width / 2}) rotate(-126)`}>
@@ -113,6 +119,21 @@ class NightingaleChart extends React.Component<Props> {
                   key={trackId}
                   transform={`rotate(${(i * 360) / trackIds.length})`}
                 >
+                  <text
+                    className={"label"}
+                    transform={`translate(0,-260)`}
+                    style={{
+                      fill: categoryColorScale(tracks[trackId].category),
+                      fontWeight: "900",
+                      textTransform: "uppercase",
+                      letterSpacing: "1.2px",
+                      fontSize: "12px",
+                      opacity: "0.8"
+                    }}
+                    textAnchor="middle"
+                  >
+                    {tracks[trackId].displayName}
+                  </text>
                   {arcMilestones.map(milestone => {
                     const isCurrentMilestone =
                       isCurrentTrack && milestone == currentMilestoneId;
@@ -143,9 +164,9 @@ class NightingaleChart extends React.Component<Props> {
                     );
                   })}
                   <circle
-                    r="0"
+                    r="8"
                     cx="0"
-                    cy="-50"
+                    cy="-68"
                     style={{
                       fill: categoryColorScale(tracks[trackId].category)
                     }}
