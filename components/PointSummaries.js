@@ -78,6 +78,7 @@ class PointSummaries extends React.Component<Props> {
         <div
           style={{
             display: "flex",
+            marginTop: "-12px",
             width: "400px",
             justifyContent: "space-between"
           }}
@@ -93,46 +94,6 @@ class PointSummaries extends React.Component<Props> {
         </div>
       </div>
     );
-    // Original table just for reference
-    // <table>
-    //   <style jsx>{`
-    //     table {
-    //       margin-bottom: 0px;
-    //       border-spacing: 2rem 0;
-    //     }
-    //     .point-summary-label {
-    //       font-size: 12px;
-    //       text-align: center;
-    //       font-weight: normal;
-    //     }
-    //     .point-summary-value {
-    //       width: 6rem;
-    //       height: 6rem;
-    //       background: #fff;
-    //       font-size: 3rem;
-    //       font-weight: bold;
-    //       line-height: 50px;
-    //       border-radius: 50%;
-    //       text-align: center;
-    //     }
-    //   `}</style>
-    //   <tbody>
-    //     <tr>
-    //       {blocks.map(({ label }, i) => (
-    //         <th key={i} className="point-summary-label">
-    //           {label}
-    //         </th>
-    //       ))}
-    //     </tr>
-    //     <tr>
-    //       {blocks.map(({ value }, i) => (
-    //         <td key={i} className="point-summary-value">
-    //           {value}
-    //         </td>
-    //       ))}
-    //     </tr>
-    //   </tbody>
-    // </table>
   }
 }
 

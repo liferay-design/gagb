@@ -76,11 +76,21 @@ class NightingaleChart extends React.Component<Props> {
         <style jsx>{`
           figure {
             margin: 4rem 0;
+            position: relative;
           }
-          svg {
+          #chart {
             width: ${width}px;
             height: ${width}px;
             margin-left: ${`${width}` / -12}px;
+          }
+
+          #overlay {
+            width: ${`${width}` * 1.3}px;
+            height: ${`${width}` * 1.3}px;
+            top: -81px;
+            left: -126px;
+            position: absolute;
+            z-index: -1;
           }
           .track-milestone {
             fill: #f7f8f9;
@@ -99,7 +109,53 @@ class NightingaleChart extends React.Component<Props> {
             transform: translate(0, -264), rotate(180);
           }
         `}</style>
-        <svg>
+        <svg viewBox="-13 -13 126 126" id="overlay">
+          <g id="labels">
+            <path
+              id="skillPath"
+              fill="none"
+              d="M50,0c29.12,0,50,19.59,50,50s-21.07,50-50,50S0,79.21,0,50,20.74,0,50,0"
+            />
+            <text
+              style={{
+                fontWeight: "900",
+                textTransform: "uppercase",
+                fontSize: "12px",
+                opacity: "0.08"
+              }}
+            >
+              <textPath
+                startOffset="60.5%"
+                style={{ fill: "#0b5FFF" }}
+                xlinkHref="#skillPath"
+              >
+                Product Design
+              </textPath>
+              <textPath
+                startOffset="10.5%"
+                style={{ fill: "#7d8b94" }}
+                xlinkHref="#skillPath"
+              >
+                Core Skills
+              </textPath>
+            </text>
+          </g>
+          {/* <g id="scale">
+            <path id="line" stroke="none" d="M274 270 l171 -234" />
+            <text
+              x="56"
+              style={{
+                fontWeight: "400",
+                fill: "#7d8b94",
+                opacity: ".5",
+                letterSpacing: "9"
+              }}
+            >
+              <textPath xlinkHref="#line">0 1 2 3 4 5</textPath>
+            </text>
+          </g> */}
+        </svg>
+        <svg id="chart">
           <defs>
             <filter id="shadow" x="-40%" width="180%" y="-40%" height="180%">
               <feDropShadow
@@ -111,6 +167,7 @@ class NightingaleChart extends React.Component<Props> {
               />
             </filter>
           </defs>
+          <circle r="270" cx="270" cy="270" fill="black" opacity="0" />
           <g transform={`translate(${width / 2},${width / 2}) rotate(-126)`}>
             {trackIds.map((trackId, i) => {
               const isCurrentTrack = trackId == this.props.focusedTrackId;
@@ -119,9 +176,14 @@ class NightingaleChart extends React.Component<Props> {
                   key={trackId}
                   transform={`rotate(${(i * 360) / trackIds.length})`}
                 >
+                  <path
+                    d="M-66.3-260.9l2.8,8.6c39.4-9.8,87.7-9.8,127.1,0l2.8-8.6C22.3-272.2-22.3-272.2-66.3-260.9z"
+                    id="catLabelCurve"
+                    fill="none"
+                  />
                   <text
+                    transform="translate(-2,4)"
                     className={"label"}
-                    transform={`translate(0,-260)`}
                     style={{
                       fill: categoryColorScale(tracks[trackId].category),
                       fontWeight: "900",
@@ -131,8 +193,13 @@ class NightingaleChart extends React.Component<Props> {
                       opacity: "0.8"
                     }}
                     textAnchor="middle"
+                    // for 1, 8, 9, 10 (bottom row) x="214", else x="75"
+                    // this is so the labels are easier to read
+                    x={i > 1 && i < 7 ? "75" : "214"}
                   >
-                    {tracks[trackId].displayName}
+                    <textPath xlinkHref="#catLabelCurve">
+                      {tracks[trackId].displayName}
+                    </textPath>
                   </text>
                   {arcMilestones.map(milestone => {
                     const isCurrentMilestone =
@@ -168,6 +235,7 @@ class NightingaleChart extends React.Component<Props> {
                     cx="0"
                     cy="-68"
                     style={{
+                      // strokeWidth: 2,
                       fill: categoryColorScale(tracks[trackId].category)
                     }}
                     className={

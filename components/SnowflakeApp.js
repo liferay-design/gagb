@@ -82,16 +82,16 @@ const defaultState = (): SnowflakeAppState => {
     name: "[Enter Name]",
     title: "Product Designer",
     milestoneByTrack: {
-      RESEARCH: 0,
-      ENGINEERING: 0,
-      INTERACTION: 0,
-      STRATEGY: 0,
-      VISUAL: 0,
-      COLLABORATION: 0,
-      EXCELLENCE: 0,
-      LEADERSHIP: 0,
-      GROWTH: 0,
-      EVANGELISM: 0
+      RESEARCH: 1,
+      ENGINEERING: 2,
+      INTERACTION: 3,
+      STRATEGY: 4,
+      VISUAL: 5,
+      COLLABORATION: 1,
+      EXCELLENCE: 2,
+      LEADERSHIP: 3,
+      GROWTH: 4,
+      EVANGELISM: 5
     },
     focusedTrackId: "RESEARCH"
   };
@@ -139,7 +139,7 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
           textarea,
           select,
           button {
-            font-family: "Source Sans Pro";
+            font-family: "Source Sans Pro", Tahoma, "Trebuchet MS", sans-serif;
           }
           main {
             width: 100%;
@@ -153,7 +153,7 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
             font-size: 3rem;
             line-height: 40px;
             font-weight: bold;
-            width: 380px;
+            width: 22ch;
             margin-bottom: 10px;
           }
           .url-input {
@@ -193,8 +193,8 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
                 onChange={e => this.setState({ name: e.target.value })}
                 placeholder="Name"
                 onFocus={e => e.target.select()}
-                // onClick={e => e.target.select()}
               />
+              {/* onClick={e => e.target.select()} */}
               <TitleSelector
                 milestoneByTrack={this.state.milestoneByTrack}
                 currentTitle={this.state.title}

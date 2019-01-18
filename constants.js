@@ -7,11 +7,11 @@ export type TrackId =
   | "INTERACTION"
   | "STRATEGY"
   | "VISUAL"
-  | "CCOLLABORATION"
-  | "EXCELLENCE"
-  | "LEADERSHIP"
-  | "GROWTH"
-  | "EVANGELISM";
+  | "ADVOCACY"
+  | "IMPACT"
+  | "COLLABORATION"
+  | "INFLUENCE"
+  | "EXCELLENCE";
 export type Milestone = 0 | 1 | 2 | 3 | 4 | 5;
 
 export type MilestoneMap = {
@@ -20,11 +20,11 @@ export type MilestoneMap = {
   INTERACTION: Milestone,
   STRATEGY: Milestone,
   VISUAL: Milestone,
+  ADVOCACY: Milestone,
+  IMPACT: Milestone,
   COLLABORATION: Milestone,
-  EXCELLENCE: Milestone,
-  LEADERSHIP: Milestone,
-  GROWTH: Milestone,
-  EVANGELISM: Milestone
+  INFLUENCE: Milestone,
+  EXCELLENCE: Milestone
 };
 export const milestones = [0, 1, 2, 3, 4, 5];
 
@@ -75,11 +75,11 @@ type Tracks = {|
   INTERACTION: Track,
   STRATEGY: Track,
   VISUAL: Track,
+  ADVOCACY: Track,
+  IMPACT: Track,
   COLLABORATION: Track,
-  EXCELLENCE: Track,
-  LEADERSHIP: Track,
-  GROWTH: Track,
-  EVANGELISM: Track
+  INFLUENCE: Track,
+  EXCELLENCE: Track
 |};
 
 export const tracks: Tracks = {
@@ -134,7 +134,7 @@ export const tracks: Tracks = {
         summary: "Level 4: Strategize",
         signals: [
           "Foster broad alignment of research with the organization’s strategic priorities.Understanding the ‘whys’ of what should be known with actions to match. ",
-          "As an M4 researcher, you want to be able to make use of your research on a program level.It is your responsibility to make sure data is useful and enable usage for those who need it.If the research data does not meet those requirements, you work improve the quality of the data and accessibility in the organization.There is a heavy emphasis on leadership and mentorship to think on the program level. ",
+          "As an M4 researcher, you want to be able to make use of your research on a program level.It is your responsibility to make sure data is useful and enable usage for those who need it.If the research data does not meet those requirements, you work improve the quality of the data and accessibility in the organization.There is a heavy emphasis on COLLABORATION and mentorship to think on the program level. ",
           "Disseminating knowledge and alignment are your top priorities.",
           "Coordinate centralizing user research in to a database",
           "Wide audience communication",
@@ -370,8 +370,8 @@ export const tracks: Tracks = {
       }
     ]
   },
-  COLLABORATION: {
-    displayName: "Collaboration",
+  ADVOCACY: {
+    displayName: "ADVOCACY",
     category: "B",
     description:
       "Shares the right amount of information with the right people, at the right time, and listens effectively",
@@ -418,8 +418,8 @@ export const tracks: Tracks = {
       }
     ]
   },
-  EXCELLENCE: {
-    displayName: "Excellence",
+  IMPACT: {
+    displayName: "IMPACT",
     category: "B",
     description:
       "Embodies and promotes practices to ensure excellent quality products and services",
@@ -466,147 +466,144 @@ export const tracks: Tracks = {
       }
     ]
   },
-  LEADERSHIP: {
-    displayName: "Leadership",
+  COLLABORATION: {
+    displayName: "COLLABORATION",
     category: "B",
     description:
-      "Challenges the status quo and effects positive organizational change outside of mandated work",
+      "Collaboration and communication involve being able to read the vast number of verbal and nonverbal cues that we all use to communicate our ideas and emotions.  People need to learn to build shared understanding, negotiate outcomes, and cultivate trust to work together to solve the problems that no one can solve alone",
     milestones: [
       {
         summary: "Level 1: Support",
         signals: [
-          "Writes Hatch posts about improvement opportunities",
-          "Raises meaningful tensions in tactical meetings",
-          "Asks leadership team probing questions at FAM"
+          "Employee is expected to Communicates and collaborate effectively with the team, colleagues, and stakeholders.",
+          "Helping others as they can, giving and receiving feedback effectively(time & manner).",
+          "Attending and helping to conduct Design Critiques Session",
+          "Helping with the application of methods to increase the C & C effectively in the team."
         ]
       },
       {
         summary: "Level 2: Support",
         signals: [
-          "Picks bugs off the backlog proactively when blocked elsewhere",
-          "Makes design quality improvements unprompted",
-          "Takes on trust and safety tasks proactively when blocked elsewhere"
+          "Proposing, and moving methods to increase the C & C effectively in the team.",
+          "Proactively providing  feedback to others.",
+          "Consistently providing high quality work and feedback",
+          "Help M1 to grow in Communication & Collaboration",
+          "Has excellent ideas to grow the C & C in the Product Team.",
+          "Sharing Knowledge(blog entries, new methods, workshops, new process or techniques, etc)"
         ]
       },
       {
         summary: "Level 3: Lead",
         signals: [
-          "Demonstrates concepts proactively with prototypes",
-          "Fixes complicated bugs outside of regular domain",
-          "Takes ownership of systems that nobody owns or wants"
+          "Coming up with new techniques or ways to increase the C & C effectively of  teams.",
+          "Is able to overcome frustration with organizational or C & C limitations to drive their ideas to implementation",
+          "Proven by execution"
         ]
       },
       {
         summary: "Level 4: Strategize ",
         signals: [
-          "Champions and pioneers new technologies to solve new classes of problem",
-          "Exemplifies grit and determination in the face of persistent obstacles",
-          "Instigates major new features, services, or architectures"
+          "Is spreading his / her knowledge(Continuously & Consistently) to the outside world(conferences, workshops, meetups). ",
+          "Proven track record of defining and executing new techniques across organizations."
         ]
       },
       {
         summary: "Level 5: Architect ",
         signals: [
-          "Creates a new function to solve systemic issues",
-          "Galvanizes the entire company and garners buy in for a new strategy",
-          "Changes complex organizational processes"
+          "Person that influences the industry, recognized as a “thought leader” in C & C.",
+          "Architecting Community / Industries initiatives.",
+          "Aaron Walter"
         ]
       }
     ]
   },
-  GROWTH: {
-    displayName: "Growth",
+  INFLUENCE: {
+    displayName: "INFLUENCE",
     category: "B",
-    description:
-      "Provides strategic support to engineers to help them build the career they want",
+    description: "[TODO:description for influence]",
     milestones: [
       {
         summary: "Level 1: Support",
         signals: [
-          "Advocates on behalf and in defense of a group member",
-          "Shares opportunities for improvements and recognises achievements",
-          "Explains appropriate available industry paths"
+          "Someone with little or no professional experience in the track."
         ]
       },
       {
         summary: "Level 2: Support",
         signals: [
-          "Ensure a group member has an appropriate role on their team",
-          "Offers effective career advice to group members, without being prescriptive",
-          "Creates space for people to talk through challenges"
+          "Employee with mature knowledge to build and create, starting to help others to grow. "
         ]
       },
       {
         summary: "Level 3: Lead",
         signals: [
-          "Discusses paths, and creates plans for personal and professional growth",
-          "Advocates to align people with appropriate roles within organization",
-          "Works with team leads to elevate emerging leaders"
+          "Employee who can lead teams or projects, driving culture and processes at Liferay."
         ]
       },
       {
         summary: "Level 4: Strategize ",
         signals: [
-          "Manages team transitions smoothly, respecting team and individual needs",
-          "Develops best practices for conflict resolution",
-          "Ensures all group members' roles are meeting their career needs"
+          "Employee who has proven success internally and, starting to become noticed in the industry."
         ]
       },
       {
         summary: "Level 5: Architect ",
         signals: [
-          "Supports and develops senior leaders",
-          "Identified leadership training opportunities for senior leadership",
-          "Pushes everyone to be as good as they can be, with empathy"
+          "Helping to shape the industry. We try to take the best designer in the market doing it. With this we set the bar for expectations."
         ]
       }
     ]
   },
-  EVANGELISM: {
-    displayName: "Evangelism",
+  EXCELLENCE: {
+    displayName: "EXCELLENCE",
     category: "B",
     description:
-      "Defines processes and structures that enables the strong growth and execution of a diverse eng organization",
+      "Producing excellence starts with paying attention to details, both in what you do and in what others do. This track measures your consistent ability to produce high quality outcomes in your daily work consistently.",
     milestones: [
       {
         summary: "Level 1: Support",
         signals: [
-          "Reflects on meetings that leave them inspired or frustrated",
-          "Teaches others about existing processes",
-          "Actively participates and makes contributions within organizational processes"
+          "Employee is expected to apply best practices towards excellence for Liferay products",
+          "Work with established standards(coding / design foundations for the company)",
+          "Helping others as they can, giving and receiving feedback effectively",
+          "Consistently following guidelines, increasing in autonomy",
+          "Pair work"
         ]
       },
       {
         summary: "Level 2: Support",
         signals: [
-          "Defines meeting structure and cadence that meets team needs",
-          "Engages in organizational systems thinking",
-          "Advocates for improved diversity and inclusion, and proposes ideas to help"
+          "Employee with mature knowledge to build and create, starting to help others to grow",
+          "Person is able to build excellence in the company using technical skills and following the stated standards",
+          "Consistently providing high quality work and feedback",
+          "Help others grow in excellence",
+          "Provides suggestions and carries out improvements that increase the level of excellence in a product, project, or team."
         ]
       },
       {
-        summary:
-          "Develp3: Leads processes to solve ongoing organizational problems",
+        summary: "Level 3: Lead",
         signals: [
-          "Creates programs that meaningfully improve organizational diversity",
-          "Solves long-standing organizational problems",
-          "Reallocates resources to meet organizational needs"
+          "Employee who can Influence people, encouraging them to deliver excellence, driving culture and processes at Liferay.",
+          "Coming up with new techniques or ways to improve the excellence of the products and contributes to applying them",
+          "This is demonstrated through conscious proposal, comfortable role in actions, continuous delivery and improvement and consistent deployment of the technique",
+          "Is able to overcome frustration with organizational or technical limitations to drive their ideas to implementation",
+          "Proven by execution over time"
         ]
       },
       {
         summary: "Level 4: Strategize ",
         signals: [
-          "Evaluates incentive structures and their effect on execution",
-          "Analyzes existing processes for bias and shortfall",
-          "Ties abstract concerns to concrete organizational actions or norms"
+          "Employee who has achieved or generated significant business value for the company in terms of Products, etc.",
+          "Shipped excellent and successful projects within the company",
+          "Is spreading his/her knowledge (Continuously & Consistently) to the outside world (conferences, workshops, meetups). ",
+          "Proven track record of defining and executing new techniques across organizations."
         ]
       },
       {
         summary: "Level 5: Architect ",
         signals: [
-          "Builds programs to train leadership in desired skills",
-          "Creates new structures that provide unique growth opportunities",
-          "Leads planning and communication for reorgs"
+          "Person that influences the industry, recognized as a “thought leader” in their field.",
+          "Ferrán Adrià, Jiro Ono"
         ]
       }
     ]
@@ -651,7 +648,8 @@ export const categoryColorScale = d3
 
 export const titles = [
   { label: "Add points to see titles", minPoints: 0, maxPoints: 0 },
-  { label: "Associate Product Designer", minPoints: 1, maxPoints: 16 },
+  { label: "Associate Product Designer", minPoints: 9, maxPoints: 16 },
+  { label: "Intern", minPoints: 1, maxPoints: 8 },
   { label: "Product Designer", minPoints: 17, maxPoints: 35 },
   { label: "Senior Product Designer", minPoints: 36, maxPoints: 57 },
   { label: "Senior Product Designer, Manager", minPoints: 36, maxPoints: 57 },
