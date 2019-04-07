@@ -2,3 +2,6 @@
 # out
 node_modules
 yarn-error.log
+.env
+token.json
+credentials.json
