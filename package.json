@@ -18,6 +18,7 @@
     "deploy": "yarn run export && we deploy -p gagb"
   },
   "devDependencies": {
+    "dotenv": "^7.0.0",
     "flow-bin": "^0.57.2",
     "googleapis": "^37.1.0",
     "readline-sync": "^1.4.9"
