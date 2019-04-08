@@ -1,3 +1,4 @@
+require('dotenv').config()
 const fs = require('fs')
 const readline = require('readline-sync')
 const { google } = require('googleapis')
@@ -17,7 +18,7 @@ const TOKEN_PATH = `${process.cwd()}/token.json`
 fetchRows('1zqucTFkeoNch9pDq2ADGWHCK0fn-OH17lnMg3HRLVfY', 'Sheet1')
   .then(({ data }) => {
     fs.writeFileSync(
-      `${__dirname}/tracks.js`,
+      `${__dirname}/constants/generated-tracks.js`,
       `export const tracks = ${JSON.stringify(mapHtmlToTracks(data[0].doc))}`
     )
   })
@@ -77,24 +78,32 @@ async function fetchRows(sheetId, tabName) {
   return { data: structuredData }
 }
 
-function getCredentials() {
-  try {
-    var credentials = fs.readFileSync(`${process.cwd()}/credentials.json`)
-  } catch (err) {
-    throw new Error(
-      `Error loading credentials for gatsby google sheets: ${err}`
-    )
-  }
-
-  return JSON.parse(credentials)
-}
-
 /**
  * Create an OAuth2 client with the given credentials, and then execute the
  * given callback function.
  */
 async function authorize() {
-  const { client_secret, client_id, redirect_uris } = getCredentials().installed
+  const { CLIENT_SECRET } = process.env
+
+  if (!CLIENT_SECRET) {
+    console.log(
+      'No client secret. Will not pull updated tracks from Google Doc.'
+    )
+    process.exit(0)
+  }
+
+  const credentials = {
+    client_id:
+      '469340410472-17mf5h0op5ionqja00lt155do7bb2ji5.apps.googleusercontent.com',
+    project_id: 'quickstart-1549146918242',
+    auth_uri: 'https://accounts.google.com/o/oauth2/auth',
+    token_uri: 'https://oauth2.googleapis.com/token',
+    auth_provider_x509_cert_url: 'https://www.googleapis.com/oauth2/v1/certs',
+    client_secret: CLIENT_SECRET,
+    redirect_uris: ['urn:ietf:wg:oauth:2.0:oob', 'http://localhost'],
+  }
+
+  const { client_secret, client_id, redirect_uris } = credentials
 
   const oAuth2Client = new google.auth.OAuth2(
     client_id,

@@ -1,4 +1,7 @@
 {
   "version": 2,
-  "name": "path"
+  "name": "path",
+  "env": {
+    "CLIENT_SECRET": "@client-secret"
+  }
 }
