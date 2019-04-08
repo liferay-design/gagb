@@ -2,7 +2,8 @@
 
 import React from "react";
 import * as d3 from "d3";
-import { trackIds, milestones, tracks, categoryColorScale } from "../constants";
+import { milestones, categoryColorScale } from "../constants";
+import { trackIds, tracks } from "../constants/tracks";
 import type { TrackId, Milestone, MilestoneMap } from "../constants";
 
 const width = 540;
