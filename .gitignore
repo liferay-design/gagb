@@ -5,3 +5,4 @@ yarn-error.log
 .env
 token.json
 credentials.json
+.DS_Store
