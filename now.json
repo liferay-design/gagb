@@ -4,8 +4,5 @@
   "env": {
     "CLIENT_SECRET": "@client-secret"
   },
-  "builds": [
-    { "src": "*.html", "use": "@now/static" },
-    { "src": "*.js", "use": "@now/node" }
-  ]
+  "builds": [{ "src": "index.html", "use": "@now/static" }]
 }
