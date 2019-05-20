@@ -15,7 +15,7 @@
     "dev": "node generateTracks && next",
     "export": "next build && next export",
     "flow": "flow",
-    "deploy": "yarn run export && now"
+    "deploy": "yarn run export && cd out && now"
   },
   "devDependencies": {
     "dotenv": "^7.0.0",
