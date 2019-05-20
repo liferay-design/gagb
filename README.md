@@ -36,3 +36,13 @@ Install dependencies:
 This will put a static version of the site in `out/`.
 
 _Note that this site is hosted on $hostname, you will need to be a member of the $hostname team to deploy it._
+
+## How It Works
+
+`generateTracks.js` pulls tracks from a variety of Google Docs.
+
+1. [Transversal Design](#TODO:add-transversal-link) — these are skills that are at the department level, skills that any designer has.
+1. [Communication Design](#TODO:add-comm-link) — skills that Communication Designers specialize in
+1. [Product Design](#TODO:add-prod-link) — skills that Product Designers specialize in
+
+The tool always shows #1 — but toggles between #2 and #3.
