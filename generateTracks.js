@@ -15,11 +15,15 @@ const TOKEN_PATH = `${process.cwd()}/token.json`
 
 /* Program Init */
 
-fetchRows('1zqucTFkeoNch9pDq2ADGWHCK0fn-OH17lnMg3HRLVfY', 'Sheet1')
+fetchRows('1SSXTk-tmV89v7EzGpK81PHLlUcbZKehYkVcjvEgnsbY', 'Sheet1')
   .then(({ data }) => {
+    const tracksObject = data.map(mapHtmlToTracks).reduce((prev, curr) => {
+      return {...prev, ...curr}
+    }, {})
+    
     fs.writeFileSync(
       `${__dirname}/constants/generated-tracks.js`,
-      `export const tracks = ${JSON.stringify(mapHtmlToTracks(data[0].doc))}`
+      `export const tracks = ${JSON.stringify(tracksObject)}`
     )
   })
   .catch(e => console.log('error', e))
@@ -28,7 +32,7 @@ fetchRows('1zqucTFkeoNch9pDq2ADGWHCK0fn-OH17lnMg3HRLVfY', 'Sheet1')
 
 function fetchDoc(id, auth) {
   const drive = google.drive({ version: 'v3', auth })
-
+  
   return drive.files.export({ fileId: id, mimeType: 'text/html' })
 }
 
@@ -68,7 +72,7 @@ async function fetchRows(sheetId, tabName) {
       try {
         var { data } = await fetchDoc(row.doc, auth)
       } catch (error) {
-        throw new Error(`doin stuff ${error}`)
+        throw new Error(`error getting doc\n${error}`)
       }
 
       return { ...row, doc: data }
@@ -94,13 +98,13 @@ async function authorize() {
 
   const credentials = {
     client_id:
-      '469340410472-17mf5h0op5ionqja00lt155do7bb2ji5.apps.googleusercontent.com',
-    project_id: 'quickstart-1549146918242',
+      '495164553956-49ps3v5d60mplo9u3cm78bkf3auem1qc.apps.googleusercontent.com',
+    project_id: 'project-id-6639741798488717549',
     auth_uri: 'https://accounts.google.com/o/oauth2/auth',
     token_uri: 'https://oauth2.googleapis.com/token',
     auth_provider_x509_cert_url: 'https://www.googleapis.com/oauth2/v1/certs',
     client_secret: CLIENT_SECRET,
-    redirect_uris: ['urn:ietf:wg:oauth:2.0:oob', 'http://localhost'],
+    redirect_uris: ['urn:ietf:wg:oauth:2.0:oob', 'http://localhost'], 
   }
 
   const { client_secret, client_id, redirect_uris } = credentials
@@ -144,7 +148,7 @@ function getNewToken(oAuth2Client) {
   return oAuth2Client.getToken(code)
 }
 
-function mapHtmlToTracks(html) {
+function mapHtmlToTracks({doc: html}) {
   const cheerio = require('cheerio')
   const tracks = {}
 
@@ -162,6 +166,7 @@ function mapHtmlToTracks(html) {
         currentCategory = $(this)
           .find('span')
           .text()
+          .toUpperCase()
 
         tracks[currentCategory] = {
           displayName: currentCategory,
@@ -192,7 +197,8 @@ function mapHtmlToTracks(html) {
             const signal = $(this)
               .find('span')
               .text()
-            signal.length > 0 &&
+
+              signal.length > 0 &&
               tracks[currentCategory].milestones[milestoneLen].signals.push(
                 signal
               )
@@ -200,5 +206,5 @@ function mapHtmlToTracks(html) {
       }
     })
 
-  return tracks
+    return tracks
 }
