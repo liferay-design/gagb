@@ -215,7 +215,7 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
           </div>
         </header>
         <div style={{ display: "flex", width: "64rem", margin: "0 auto 30vh" }}>
-          <div>
+          <div style={{ display: "table", position:"sticky",top:"1rem"}}>
             <NightingaleChart
               milestoneByTrack={this.state.milestoneByTrack}
               focusedTrackId={this.state.focusedTrackId}
