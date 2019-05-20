@@ -159,9 +159,14 @@ function mapHtmlToTracks({doc: html}) {
 
   let currentCategory = ''
 
+  // TODO: Add 'h1' as "category"
   $('h1')
     .siblings()
     .map(function(i, el) {
+      const department = $(this)
+        .find('h1')
+        .text()
+
       if (el.name === 'h2') {
         currentCategory = $(this)
           .find('span')
@@ -169,6 +174,7 @@ function mapHtmlToTracks({doc: html}) {
           .toUpperCase()
 
         tracks[currentCategory] = {
+          department: department,
           displayName: currentCategory,
           milestones: [],
         }
