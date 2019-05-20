@@ -23,7 +23,7 @@ fetchRows('1SSXTk-tmV89v7EzGpK81PHLlUcbZKehYkVcjvEgnsbY', 'Sheet1')
     
     fs.writeFileSync(
       `${__dirname}/constants/generated-tracks.js`,
-      `export const tracks = ${JSON.stringify(tracksObject)}`
+      `export const tracks = ${JSON.stringify(tracksObject, null, 4)}`
     )
   })
   .catch(e => console.log('error', e))
@@ -98,13 +98,13 @@ async function authorize() {
 
   const credentials = {
     client_id:
-      '495164553956-49ps3v5d60mplo9u3cm78bkf3auem1qc.apps.googleusercontent.com',
+      '750375359602-r4f7m7r3u50vess49odeih2u9fft75t1.apps.googleusercontent.com',
     project_id: 'project-id-6639741798488717549',
     auth_uri: 'https://accounts.google.com/o/oauth2/auth',
     token_uri: 'https://oauth2.googleapis.com/token',
     auth_provider_x509_cert_url: 'https://www.googleapis.com/oauth2/v1/certs',
     client_secret: CLIENT_SECRET,
-    redirect_uris: ['urn:ietf:wg:oauth:2.0:oob', 'http://localhost'], 
+    redirect_uris: ['urn:ietf:wg:oauth:2.0:oob', 'http://localhost'],
   }
 
   const { client_secret, client_id, redirect_uris } = credentials
@@ -160,12 +160,11 @@ function mapHtmlToTracks({doc: html}) {
   let currentCategory = ''
 
   // TODO: Add 'h1' as "category"
+  const department = $('h1').text()
+
   $('h1')
     .siblings()
     .map(function(i, el) {
-      const department = $(this)
-        .find('h1')
-        .text()
 
       if (el.name === 'h2') {
         currentCategory = $(this)
@@ -174,8 +173,9 @@ function mapHtmlToTracks({doc: html}) {
           .toUpperCase()
 
         tracks[currentCategory] = {
-          department: department,
-          displayName: currentCategory,
+          // TODO trim department to first few characters
+          department: department.trim(4),
+          displayName: currentCategory.trim(),
           milestones: [],
         }
       } else if (el.attribs.class === 'subtitle') {
