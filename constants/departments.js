@@ -6,3 +6,5 @@ export const departments = [
         label: "Communication Design"
     }
 ];
+
+// TODO: Be able to switch departments
