@@ -8,7 +8,12 @@ Our growth tool is hosted [publicly](https://grow.liferay.design).
 
 ## Thanks
 
-Thanks to [Medium](https://github.com/Medium/snowflake) for sharing their original Snowflake model and repo, it really helped us out!
+- Thanks to [Medium](https://github.com/Medium/snowflake) for sharing their original Snowflake model and repo, it really helped us out!
+- Huge thanks to @protoevangelion for all his work on generating the tracks from Google Docs
+
+## Updating Content
+
+Note that this app is pulling content from Google Docs that are private to the Liferay Design Team. If you're part of the team and don't have access, please reach out to your manager or regional lead.
 
 ## Installation
 
@@ -29,3 +34,5 @@ Install dependencies:
 `yarn export`
 
 This will put a static version of the site in `out/`.
+
+_Note that this site is hosted on $hostname, you will need to be a member of the $hostname team to deploy it._
