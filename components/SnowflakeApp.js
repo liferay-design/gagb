@@ -16,6 +16,7 @@ import PointSummaries from "../components/PointSummaries";
 import type { Milestone, MilestoneMap, TrackId } from "../constants";
 import React from "react";
 import TitleSelector from "../components/TitleSelector";
+import DepartmentSelector from "./DepartmentSelector";
 
 type SnowflakeAppState = {
   milestoneByTrack: MilestoneMap,
