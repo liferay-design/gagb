@@ -48,10 +48,13 @@ export const pointsToLevels = {
 
 export const maxLevel = 135
 
+
 export const categoryIds: Set<string> = trackIds.reduce((set, trackId) => {
-  set.add(tracks[trackId].category)
+  set.add(tracks[trackId].department)
   return set
 }, new Set())
+
+// console.log(categoryIds)
 
 export const categoryPointsFromMilestoneMap = (milestoneMap: MilestoneMap) => {
   let pointsByCategory = new Map()
@@ -78,9 +81,10 @@ export const totalPointsFromMilestoneMap = (
     .reduce((sum, addend) => sum + addend, 0)
 
 export const categoryColorScale = d3
-  .scaleOrdinal()
-  .domain(categoryIds)
-  .range(['#0b5fff', '#7d8b94'])
+         .scaleOrdinal()
+         .domain(categoryIds)
+         .range(['#7d8b94', '#0b5fff', '#7d8b94'])
+
 
 export const eligibleTitles = (milestoneMap: MilestoneMap): string[] => {
   const totalPoints = totalPointsFromMilestoneMap(milestoneMap)

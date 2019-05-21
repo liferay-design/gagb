@@ -36,7 +36,6 @@ const width = 540;
 const arcMilestones = milestones.slice(1); // we'll draw the '0' milestone with a circle, not an arc.
 
 type Props = {
-  // DEPTFILTERTODO I think here is where we need to add a prop to filter the departments
   milestoneByTrack: MilestoneMap,
   focusedTrackId: TrackId,
   handleTrackMilestoneChangeFn: (TrackId, Milestone) => void,
@@ -150,25 +149,25 @@ class NightingaleChart extends React.Component<Props> {
             />
             <text
               style={{
-                fontWeight: "900",
-                textTransform: "uppercase",
-                fontSize: "12px",
-                opacity: "0.08"
+                fontWeight: '900',
+                textTransform: 'uppercase',
+                fontSize: '12px',
+                opacity: '0.08',
               }}
             >
               <textPath
                 startOffset="60.5%"
-                style={{ fill: "#0b5FFF" }}
-                xlinkHref="#skillPath"
-              >
-                Product Design
-              </textPath>
-              <textPath
-                startOffset="10.5%"
-                style={{ fill: "#7d8b94" }}
+                style={{ fill: '#7d8b94' }}
                 xlinkHref="#skillPath"
               >
                 Core Skills
+              </textPath>
+              <textPath
+                startOffset="10.5%"
+                style={{ fill: '#0b5FFF' }}
+                xlinkHref="#skillPath"
+              >
+                Product Design
               </textPath>
             </text>
           </g>
@@ -189,7 +188,13 @@ class NightingaleChart extends React.Component<Props> {
         </svg>
         <svg id="chart">
           <defs>
-            <filter id="shadow" x="-40%" width="180%" y="-40%" height="180%">
+            <filter
+              id="shadow"
+              x="-40%"
+              width="180%"
+              y="-40%"
+              height="180%"
+            >
               <feDropShadow
                 dx="0"
                 dy="0"
@@ -200,9 +205,11 @@ class NightingaleChart extends React.Component<Props> {
             </filter>
           </defs>
           <circle r="270" cx="270" cy="270" fill="black" opacity="0" />
-          <g transform={`translate(${width / 2},${width / 2}) rotate(-126)`}>
+          <g
+            transform={`translate(${width / 2},${width / 2}) rotate(-126)`}
+          >
             {this.trackIds.map((trackId, i) => {
-              const isCurrentTrack = trackId == this.props.focusedTrackId;
+              const isCurrentTrack = trackId == this.props.focusedTrackId
               return (
                 <g
                   key={trackId}
@@ -215,19 +222,19 @@ class NightingaleChart extends React.Component<Props> {
                   />
                   <text
                     transform="translate(-2,4)"
-                    className={"label"}
+                    className={'label'}
                     style={{
                       fill: categoryColorScale(tracks[trackId].department),
-                      fontWeight: "900",
-                      textTransform: "uppercase",
-                      letterSpacing: "1.2px",
-                      fontSize: "12px",
-                      opacity: "0.8"
+                      fontWeight: '900',
+                      textTransform: 'uppercase',
+                      letterSpacing: '1.2px',
+                      fontSize: '12px',
+                      opacity: '0.8',
                     }}
                     textAnchor="middle"
                     // for 1, 8, 9, 10 (bottom row) x="214", else x="75"
                     // this is so the labels are easier to read
-                    x={i > 1 && i < 7 ? "75" : "214"}
+                    x={i > 1 && i < 7 ? '75' : '214'}
                   >
                     <textPath xlinkHref="#catLabelCurve">
                       {tracks[trackId].displayName}
@@ -235,17 +242,19 @@ class NightingaleChart extends React.Component<Props> {
                   </text>
                   {arcMilestones.map(milestone => {
                     const isCurrentMilestone =
-                      isCurrentTrack && milestone == currentMilestoneId;
+                      isCurrentTrack && milestone == currentMilestoneId
                     const isMet =
                       this.props.milestoneByTrack[trackId] >= milestone ||
-                      milestone == 0;
+                      milestone == 0
                     return (
                       <path
                         key={milestone}
                         className={
-                          "track-milestone " +
-                          (isMet ? "is-met " : " ") +
-                          (isCurrentMilestone ? "track-milestone-current" : "")
+                          'track-milestone ' +
+                          (isMet ? 'is-met ' : ' ') +
+                          (isCurrentMilestone
+                            ? 'track-milestone-current'
+                            : '')
                         }
                         onClick={() =>
                           this.props.handleTrackMilestoneChangeFn(
@@ -256,11 +265,11 @@ class NightingaleChart extends React.Component<Props> {
                         d={this.arcFn(milestone)}
                         style={{
                           fill: isMet
-                            ? categoryColorScale(tracks[trackId].category)
-                            : undefined
+                            ? categoryColorScale(tracks[trackId].department)
+                            : undefined,
                         }}
                       />
-                    );
+                    )
                   })}
                   <circle
                     r="8"
@@ -268,25 +277,25 @@ class NightingaleChart extends React.Component<Props> {
                     cy="-68"
                     style={{
                       // strokeWidth: 2,
-                      fill: categoryColorScale(tracks[trackId].category)
+                      fill: categoryColorScale(tracks[trackId].department),
                     }}
                     className={
-                      "track-milestone " +
+                      'track-milestone ' +
                       (isCurrentTrack && !currentMilestoneId
-                        ? "track-milestone-current"
-                        : "")
+                        ? 'track-milestone-current'
+                        : '')
                     }
                     onClick={() =>
                       this.props.handleTrackMilestoneChangeFn(trackId, 0)
                     }
                   />
                 </g>
-              );
+              )
             })}
           </g>
         </svg>
       </figure>
-    );
+    )
   }
 }
 
