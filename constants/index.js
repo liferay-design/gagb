@@ -3,17 +3,17 @@ import * as d3 from 'd3'
 import { titles } from './titles'
 import { trackIds, tracks } from './tracks'
 
-export type TrackId =
-  | 'RESEARCH'
-  | 'ENGINEERING'
-  | 'INTERACTION'
-  | 'STRATEGY'
-  | 'VISUAL'
-  | 'ADVOCACY'
-  | 'IMPACT'
-  | 'COLLABORATION'
-  | 'INFLUENCE'
-  | 'EXCELLENCE'
+// export type TrackId =
+//   | 'RESEARCH'
+//   | 'ENGINEERING'
+//   | 'INTERACTION'
+//   | 'STRATEGY'
+//   | 'VISUAL'
+//   | 'ADVOCACY'
+//   | 'IMPACT'
+//   | 'COLLABORATION'
+//   | 'INFLUENCE'
+//   | 'EXCELLENCE'
 
 export type Track = {
   displayName: string,
@@ -26,20 +26,20 @@ export type Track = {
   }[],
 }
 
-export type Milestone = 0 | 1 | 2 | 3 | 4 | 5
+// export type Milestone = 0 | 1 | 2 | 3 | 4 | 5
 
-export type MilestoneMap = {
-  RESEARCH: Milestone,
-  ENGINEERING: Milestone,
-  INTERACTION: Milestone,
-  STRATEGY: Milestone,
-  VISUAL: Milestone,
-  ADVOCACY: Milestone,
-  IMPACT: Milestone,
-  COLLABORATION: Milestone,
-  INFLUENCE: Milestone,
-  EXCELLENCE: Milestone,
-}
+// export type MilestoneMap = {
+//   RESEARCH: Milestone,
+//   ENGINEERING: Milestone,
+//   INTERACTION: Milestone,
+//   STRATEGY: Milestone,
+//   VISUAL: Milestone,
+//   ADVOCACY: Milestone,
+//   IMPACT: Milestone,
+//   COLLABORATION: Milestone,
+//   INFLUENCE: Milestone,
+//   EXCELLENCE: Milestone,
+// }
 export const milestones = [0, 1, 2, 3, 4, 5]
 
 // each milestone level is worth this many points
