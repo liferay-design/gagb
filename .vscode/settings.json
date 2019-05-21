@@ -2,5 +2,6 @@
   "flow.useNPMPackagedFlow": true,
   "flow.runOnAllFiles": true,
   "javascript.validate.enable": false,
-  "typescript.disableAutomaticTypeAcquisition": true
+  "typescript.disableAutomaticTypeAcquisition": true,
+  "editor.formatOnSave": true
 }

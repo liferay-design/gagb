@@ -578,9 +578,9 @@ export const tracks = {
         ],
         "description": "Graphic design combines visual artifacts like illustrations, photography, typography to communicate and problem solve."
     },
-    "VIDEOGRAPHY-WIP": {
+    "VIDEOGRAPHY": {
         "department": "CO",
-        "displayName": "VIDEOGRAPHY-WIP",
+        "displayName": "VIDEOGRAPHY",
         "milestones": [
             {
                 "summary": "M1: Support",
@@ -615,9 +615,9 @@ export const tracks = {
         ],
         "description": "Videography includes video production and pre/post production. Videos may be viewed online or at an event."
     },
-    "COMMSKILL 3": {
+    "PHOTOGRAPHY": {
         "department": "CO",
-        "displayName": "COMMSKILL 3",
+        "displayName": "PHOTOGRAPHY",
         "milestones": [
             {
                 "summary": "M1: Support",
@@ -652,9 +652,9 @@ export const tracks = {
         ],
         "description": "Subtitle for the skill — a few lines only "
     },
-    "COMMSKILL 4": {
+    "ILLUSTRATION": {
         "department": "CO",
-        "displayName": "COMMSKILL 4",
+        "displayName": "ILLUSTRATION",
         "milestones": [
             {
                 "summary": "M1: Support",
@@ -689,9 +689,46 @@ export const tracks = {
         ],
         "description": "Subtitle for the skill — a few lines only "
     },
-    "COMMSKILL 5": {
+    "BRANDING": {
         "department": "CO",
-        "displayName": "COMMSKILL 5",
+        "displayName": "BRANDING",
+        "milestones": [
+            {
+                "summary": "M1: Support",
+                "signals": [
+                    "Signal 1"
+                ]
+            },
+            {
+                "summary": "M2: Build",
+                "signals": [
+                    "Signal"
+                ]
+            },
+            {
+                "summary": "M3: Lead",
+                "signals": [
+                    "Signal"
+                ]
+            },
+            {
+                "summary": "M4: Strategize",
+                "signals": [
+                    "Signal"
+                ]
+            },
+            {
+                "summary": "M5: Architect",
+                "signals": [
+                    "Signal"
+                ]
+            }
+        ],
+        "description": "Subtitle for the skill — a few lines only "
+    },
+    "MARKETING": {
+        "department": "CO",
+        "displayName": "MARKETING",
         "milestones": [
             {
                 "summary": "M1: Support",
