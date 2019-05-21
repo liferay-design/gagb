@@ -64,11 +64,6 @@ const emptyState = (): SnowflakeAppState => {
     name: "",
     title: "",
     milestoneByTrack: {
-      RESEARCH: 0,
-      ENGINEERING: 0,
-      INTERACTION: 0,
-      STRATEGY: 0,
-      VISUAL: 0,
       COLLABORATION: 0,
       EXCELLENCE: 0,
       LEADERSHIP: 0,
@@ -85,16 +80,11 @@ const defaultState = (): SnowflakeAppState => {
     name: "[Enter Name]",
     title: "Product Designer",
     milestoneByTrack: {
-      RESEARCH: 1,
-      ENGINEERING: 2,
-      INTERACTION: 3,
-      STRATEGY: 4,
-      VISUAL: 5,
       COLLABORATION: 1,
       EXCELLENCE: 2,
-      LEADERSHIP: 3,
-      GROWTH: 4,
-      EVANGELISM: 5
+      ADVOCACY: 3,
+      INFLUENCE: 4,
+      IMPACT: 5
     },
     focusedTrackId: "EXCELLENCE"
   };
