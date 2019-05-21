@@ -173,8 +173,7 @@ function mapHtmlToTracks({doc: html}) {
           .toUpperCase()
 
         tracks[currentCategory] = {
-          // TODO trim department to first few characters
-          department: department.trim(4),
+          department: department.substring(0,2).toUpperCase(),
           displayName: currentCategory.trim(),
           milestones: [],
         }

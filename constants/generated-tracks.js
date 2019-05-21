@@ -1,6 +1,6 @@
 export const tracks = {
     "MEXCELLENCE": {
-        "department": "Transversal Skills",
+        "department": "TR",
         "displayName": "MEXCELLENCE",
         "milestones": [
             {
@@ -48,7 +48,7 @@ export const tracks = {
         "description": "Producing excellence starts with paying attention to details, both in what you do and in what others do. This track measures your ability to produce high-quality outcomes in your daily work consistently."
     },
     "COLLABORATION": {
-        "department": "Transversal Skills",
+        "department": "TR",
         "displayName": "COLLABORATION",
         "milestones": [
             {
@@ -95,7 +95,7 @@ export const tracks = {
         "description": "Collaboration is more than just working with others. It's about sharing skills, methods, and perspectives with colleagues. It requires effectively listening and thoughtfully receiving feedback from others.  Cultivate trust and build a shared understanding to solve problems together."
     },
     "IMPACT": {
-        "department": "Transversal Skills",
+        "department": "TR",
         "displayName": "IMPACT",
         "milestones": [
             {
@@ -142,7 +142,7 @@ export const tracks = {
         "description": "Combining initiative with accountability — impact is seeing opportunities and taking effective action to achieve positive results that contribute to the long-term success of the organization."
     },
     "ADVOCACY": {
-        "department": "Transversal Skills",
+        "department": "TR",
         "displayName": "ADVOCACY",
         "milestones": [
             {
@@ -192,7 +192,7 @@ export const tracks = {
         "description": "The passionate education and coordination of people/principles/practices throughout an organization, using various levers and switches (social, political, economic, technological, etc.), while respecting people’s needs and organizational goals."
     },
     "INFLUENCE": {
-        "department": "Transversal Skills",
+        "department": "TR",
         "displayName": "INFLUENCE",
         "milestones": [
             {
@@ -253,7 +253,7 @@ export const tracks = {
         "description": "Leadership skills are required to guide individuals, teams, or an entire organization to reach a shared goal. As the company grows and the number of people and teams increases, it’s important that some individuals assume additional responsibilities serving people and teams effectively."
     },
     "STRATEGY": {
-        "department": "Product Design",
+        "department": "PR",
         "displayName": "STRATEGY",
         "milestones": [
             {
@@ -299,7 +299,7 @@ export const tracks = {
         "description": "Business in the context of design is the ability to understand the market, contribute to business goals to solve problems and create tools to improve the design lifecycle."
     },
     "RESEARCH": {
-        "department": "Product Design",
+        "department": "PR",
         "displayName": "RESEARCH",
         "milestones": [
             {
@@ -360,7 +360,7 @@ export const tracks = {
         "description": "User research focuses on understanding user behaviors, needs, and motivations through observation techniques, task analysis, and other feedback methodologies. "
     },
     "INTERACTION": {
-        "department": "Product Design",
+        "department": "PR",
         "displayName": "INTERACTION",
         "milestones": [
             {
@@ -424,7 +424,7 @@ export const tracks = {
         "description": "Interaction Design combines Usability, Information Architecture, and other disciplines to deliver easy to use products."
     },
     "VISUAL": {
-        "department": "Product Design",
+        "department": "PR",
         "displayName": "VISUAL",
         "milestones": [
             {
@@ -474,7 +474,7 @@ export const tracks = {
         "description": "Visual design shapes the product experience through visual artifacts like illustrations, photography, typography, color and more to improve the usability of products."
     },
     "ENGINEERING": {
-        "department": "Product Design",
+        "department": "PR",
         "displayName": "ENGINEERING",
         "milestones": [
             {
@@ -527,15 +527,13 @@ export const tracks = {
         "description": "Engineering in the context of design is the ability to understand technology, contribute to the engineering team to solve problems and create tools to improve the design lifecycle."
     },
     "COMMSKILL 1": {
-        "department": "Communication Design",
+        "department": "CO",
         "displayName": "COMMSKILL 1",
         "milestones": [
             {
                 "summary": "M1: Support",
                 "signals": [
-                    "Familiar with the market and company strategy. ",
-                    "Reading and sharing analyst and industry reports",
-                    "Can support the design strategy for one project/product"
+                    "Signal 1"
                 ]
             },
             {
@@ -570,10 +568,10 @@ export const tracks = {
                 ]
             }
         ],
-        "description": "Business in the context of design is the ability to understand the market, contribute to business goals to solve problems and create tools to improve the design lifecycle."
+        "description": "Subtitle for the skill — a few lines only "
     },
     "COMMSKILL 2": {
-        "department": "Communication Design",
+        "department": "CO",
         "displayName": "COMMSKILL 2",
         "milestones": [
             {
@@ -634,7 +632,7 @@ export const tracks = {
         "description": "User research focuses on understanding user behaviors, needs, and motivations through observation techniques, task analysis, and other feedback methodologies. "
     },
     "COMMSKILL 3": {
-        "department": "Communication Design",
+        "department": "CO",
         "displayName": "COMMSKILL 3",
         "milestones": [
             {
@@ -698,7 +696,7 @@ export const tracks = {
         "description": "Interaction Design combines Usability, Information Architecture, and other disciplines to deliver easy to use products."
     },
     "COMMSKILL 4": {
-        "department": "Communication Design",
+        "department": "CO",
         "displayName": "COMMSKILL 4",
         "milestones": [
             {
@@ -748,7 +746,7 @@ export const tracks = {
         "description": "Visual design shapes the product experience through visual artifacts like illustrations, photography, typography, color and more to improve the usability of products."
     },
     "COMMSKILL 5": {
-        "department": "Communication Design",
+        "department": "CO",
         "displayName": "COMMSKILL 5",
         "milestones": [
             {
