@@ -1,7 +1,7 @@
 export const tracks = {
-    "EXCELLENCE ": {
+    "MEXCELLENCE": {
         "department": "Transversal Skills",
-        "displayName": "EXCELLENCE",
+        "displayName": "MEXCELLENCE",
         "milestones": [
             {
                 "summary": "M1: Apply best practices towards excellence for Liferay products / projects:",
@@ -476,6 +476,280 @@ export const tracks = {
     "ENGINEERING": {
         "department": "Product Design",
         "displayName": "ENGINEERING",
+        "milestones": [
+            {
+                "summary": "M1: Support",
+                "signals": [
+                    "Understands and experiences the engineering lifecycle of a product from ideation to market launch.",
+                    "Basic language / framework",
+                    "Knows design tokens",
+                    "Understands accessibility related things to implementation"
+                ]
+            },
+            {
+                "summary": "M2: Build",
+                "signals": [
+                    "Builds html prototype, webpage",
+                    "Able to optimize his own code, helps others review",
+                    "Uses components and APIs",
+                    "Develops with accessibility in mind"
+                ]
+            },
+            {
+                "summary": "M3: Lead",
+                "signals": [
+                    "Create components",
+                    "Code review (not only structure but accessibility)",
+                    "Develops standalone site",
+                    "Understands react/angular/php/python"
+                ]
+            },
+            {
+                "summary": "M4: Strategize",
+                "signals": [
+                    "Proven track record",
+                    "Create APIs",
+                    "Platform & technologist",
+                    "Create design systems"
+                ]
+            },
+            {
+                "summary": "M5: Architect",
+                "signals": [
+                    "You are a recognized, industry expert in Engineering.",
+                    "Ideate Successful APIs",
+                    "Have successful, robust design systems used in the market",
+                    "Industry leader at the intersection of Design and Technology",
+                    "Colm Tuite, Brent Jackson, Jon Gold"
+                ]
+            }
+        ],
+        "description": "Engineering in the context of design is the ability to understand technology, contribute to the engineering team to solve problems and create tools to improve the design lifecycle."
+    },
+    "COMMSKILL 1": {
+        "department": "Communication Design",
+        "displayName": "COMMSKILL 1",
+        "milestones": [
+            {
+                "summary": "M1: Support",
+                "signals": [
+                    "Familiar with the market and company strategy. ",
+                    "Reading and sharing analyst and industry reports",
+                    "Can support the design strategy for one project/product"
+                ]
+            },
+            {
+                "summary": "M2: Build",
+                "signals": [
+                    "Define metrics that correspond to business goals.",
+                    "Can build the design strategy for one project/product"
+                ]
+            },
+            {
+                "summary": "M3: Lead",
+                "signals": [
+                    "Relevant industry experience",
+                    "Can coordinate the design strategy for all products in the company"
+                ]
+            },
+            {
+                "summary": "M4: Strategize",
+                "signals": [
+                    "Can envision the design strategy for all products in the company",
+                    "Discover new markets",
+                    "Proto-persona: Alen Fjalic, Bobby Ghoshal"
+                ]
+            },
+            {
+                "summary": "M5: Architect",
+                "signals": [
+                    "You are a recognized industry expert in Design Strategy.",
+                    "Demonstrated success in the market.",
+                    "Generating significant business value for the company in terms of new verticals, new sources of revenue, etc.",
+                    "Designer-founders: Tom Kelly, Clark Valberg, Des Traynor, Brian Chesky"
+                ]
+            }
+        ],
+        "description": "Business in the context of design is the ability to understand the market, contribute to business goals to solve problems and create tools to improve the design lifecycle."
+    },
+    "COMMSKILL 2": {
+        "department": "Communication Design",
+        "displayName": "COMMSKILL 2",
+        "milestones": [
+            {
+                "summary": "M1: Support ",
+                "signals": [
+                    "Maintaining Participant Pool, communicating with participants",
+                    "Develop and scope clear research proposals and projects",
+                    "Basic research tasks like user testing, recruiting, simple reporting, and interview note-taking",
+                    "Quantitative data collection and analysis, contributing to research database",
+                    "Synthesizing findings in various artifacts such as personas, journey maps, mental models, usability reports",
+                    "Starts with prepackaged questions or predefined methods and executes on defined units of work."
+                ]
+            },
+            {
+                "summary": "M2: Build",
+                "signals": [
+                    "Lead Interview debrief",
+                    "Observation",
+                    "Quantitative data collection and analysis (use of mathematical models)",
+                    "Executing the prescribed research methods to grasp the outcomes each method yields with minimal supervision. Objectively report and share their evidence based recommendations.",
+                    "Workshop facilitation",
+                    "Sell to internal stakeholders"
+                ]
+            },
+            {
+                "summary": "M3: Lead",
+                "signals": [
+                    "Work with product managers (and other stakeholders) and take ownership of product direction. What do we need to know? Why is this important to us? When should we execute?",
+                    "Report findings and actionable insights. Drive the direction of the product based on evidence.",
+                    "Data collection (Quantitative, Qualitative)",
+                    "Complex reporting",
+                    "Workshop facilitation to align understanding of customer data",
+                    "Synthesizing findings in various artifacts such as personas, journey maps, mental models, usability reports",
+                    "Present research insights in a digestible story at different levels of depth depending on the audience",
+                    "Framing research findings in greater context, leverage storytelling to create buy-in",
+                    "Foster adoption of research db "
+                ]
+            },
+            {
+                "summary": "M4: Strategize",
+                "signals": [
+                    "Disseminating knowledge and alignment are your top priorities.",
+                    "Coordinate centralizing user research in to a database",
+                    "Wide audience communication",
+                    "Foster adoption of research db",
+                    "Product roadmap planning",
+                    "Program Design",
+                    "Laura Kalbag"
+                ]
+            },
+            {
+                "summary": "M5: Architect",
+                "signals": [
+                    "Bill Buxton, Erika Hall"
+                ]
+            }
+        ],
+        "description": "User research focuses on understanding user behaviors, needs, and motivations through observation techniques, task analysis, and other feedback methodologies. "
+    },
+    "COMMSKILL 3": {
+        "department": "Communication Design",
+        "displayName": "COMMSKILL 3",
+        "milestones": [
+            {
+                "summary": "M1: Support",
+                "signals": [
+                    "Know and use of Design System",
+                    "Able to differentiate web from mobile and the different requirements for each, including the review of platform guidelines.",
+                    "Knows what accessibility is about but hasn’t yet started to care about it.",
+                    "Explore best practices for common design problems; solutions are solid, though not novel",
+                    "Solve specific function-level problems (e.g., \"add to shopping cart\")"
+                ]
+            },
+            {
+                "summary": "M2: Build",
+                "signals": [
+                    "An established performer with strong communication skills who proactively builds relationships",
+                    "Able to contribute on shipped projects",
+                    "Able to contribute to Design System",
+                    "Ability to analyse and solve accessibility problems.",
+                    "Emerging recognition that it's not all about design, but how design contributes to a broader goal; recognizes business goals and technical constraints",
+                    "Strong and capable engagement in standard design processes",
+                    "Confident in applying best practices to common design problems; solutions are solid, not novel",
+                    "Given specific product capabilities that need to be solved (e.g., Checkout process)"
+                ]
+            },
+            {
+                "summary": "M3: Lead",
+                "signals": [
+                    "A high-level performer with strong relationships and the ability to lead projects",
+                    "Expertise, process, explain the rationale, cross-functional",
+                    "Contributed to multiple shipped products",
+                    "Develops the process/approach for tackling a design problem, using known methods; anticipates problems",
+                    "Begins going beyond best practices",
+                    "Clarifies success metrics and ties efforts toward delivering business value",
+                    "Leads the solution of a product area; connects that to broader product vision (e.g, product page and purchase experience)"
+                ]
+            },
+            {
+                "summary": "M4: Strategize",
+                "signals": [
+                    "An organized leader and performer who pushes convention and drives change",
+                    "Leads the delivery of shipped products; Delivered successful work at the scope of product areas",
+                    "Develops the process/approach for tackling a design problem, using known methods; anticipates problems; develops facilitation skills to engage cross-functional teams",
+                    "Begins to realize the power of problem-framing, establishing new starting points that lead to new kinds of solutions",
+                    "Leading the solution of undefined problem spaces (e.g. “How do people complete a transaction?”)",
+                    "Uses understanding of impact and success metrics to focus and re-prioritize their and their team's efforts; Emerging understanding of broader organizational context and goals; "
+                ]
+            },
+            {
+                "summary": "M5: Architect",
+                "signals": [
+                    "You are a recognized, industry expert in Interaction Design.",
+                    "Frames and solves hard problems; has driven innovative efforts that uncovered new value with new kinds of experiences; presents company as an industry leader in design",
+                    "Working with partners and stakeholders, begins making real change in how the company approaches its business; Articulates vision for the team that excites and inspires leaders and partners",
+                    "Reframes company-wide \"problems\" to suggest new approaches for solving them.",
+                    "The Big Picture of an entire company's offerings, and how they integrate and coordinate",
+                    "Luke Wroblewski, Jared Spool"
+                ]
+            }
+        ],
+        "description": "Interaction Design combines Usability, Information Architecture, and other disciplines to deliver easy to use products."
+    },
+    "COMMSKILL 4": {
+        "department": "Communication Design",
+        "displayName": "COMMSKILL 4",
+        "milestones": [
+            {
+                "summary": "M1: Support",
+                "signals": [
+                    "Strong graphic design foundation: grid, typo, color definition",
+                    "Have a strong visual background in print or digital media, advertising, illustration, fine arts, architecture, motion, film, etc",
+                    "Becoming familiar with the limitations and requirements of designing in products and digital scenarios, knowledge and familiarity of designing within systems",
+                    "Creating visual elements (motion, icons, illustration, etc) within an established system",
+                    "Creation of libraries; Icons,  Illustrations, Style guide (Visual kit).",
+                    "Applying the visual layer for products or projects"
+                ]
+            },
+            {
+                "summary": "M2: Build",
+                "signals": [
+                    "Creating libraries of visual components for new and established systems",
+                    "Designing the complete visual layer at an individual project or product level",
+                    "Strong understanding of interaction principles (accessibility, usability) and able to thrive within those constraints",
+                    "Deep understanding of brand and applying in a product",
+                    "Able to synthesize business strategy with a visual direction",
+                    "Creating and defining new brands for products or projects"
+                ]
+            },
+            {
+                "summary": "M3: Lead",
+                "signals": [
+                    "Coordinating visual strategy for all products",
+                    "Leading the visual direction for products across multiple teams"
+                ]
+            },
+            {
+                "summary": "M4: Strategize",
+                "signals": [
+                    "Leading visuals at an organizational level"
+                ]
+            },
+            {
+                "summary": "M5: Architect",
+                "signals": [
+                    "You are a recognized, industry expert in Visual Design.",
+                    "Design Architect with successful products in the market, creating and leading the visual standard, creating trends",
+                    "Tobias Van Schneider, Mike (Creative Mints)"
+                ]
+            }
+        ],
+        "description": "Visual design shapes the product experience through visual artifacts like illustrations, photography, typography, color and more to improve the usability of products."
+    },
+    "COMMSKILL 5": {
+        "department": "Communication Design",
+        "displayName": "COMMSKILL 5",
         "milestones": [
             {
                 "summary": "M1: Support",
