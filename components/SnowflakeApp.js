@@ -26,6 +26,7 @@ type SnowflakeAppState = {
 };
 
 const hashToState = (hash: String): ?SnowflakeAppState => {
+  // DEPTFILTERTODO we'd need to add some sort of department designation to the hash
   if (!hash) return null;
   const result = defaultState();
   const hashValues = hash.split("#")[1].split(",");
@@ -74,11 +75,12 @@ const emptyState = (): SnowflakeAppState => {
       GROWTH: 0,
       EVANGELISM: 0
     },
-    focusedTrackId: "RESEARCH"
+    focusedTrackId: "EXCELLENCE"
   };
 };
 
 const defaultState = (): SnowflakeAppState => {
+  // DEPTFILTERTODO need to add a default department?
   return {
     name: "[Enter Name]",
     title: "Product Designer",
@@ -94,11 +96,12 @@ const defaultState = (): SnowflakeAppState => {
       GROWTH: 4,
       EVANGELISM: 5
     },
-    focusedTrackId: "RESEARCH"
+    focusedTrackId: "EXCELLENCE"
   };
 };
 
 const stateToHash = (state: SnowflakeAppState) => {
+  // DEPTFILTERTODO add filter here?
   if (!state || !state.milestoneByTrack) return null;
   const values = trackIds
     .map(trackId => state.milestoneByTrack[trackId])
@@ -211,23 +214,18 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
               margin: "0 auto"
             }}
           >
-            {/* <LevelThermometer milestoneByTrack={this.state.milestoneByTrack} /> */}
           </div>
         </header>
         <div style={{ display: "flex", width: "64rem", margin: "0 auto 30vh" }}>
           <div style={{ display: "table", position:"sticky",top:"1rem"}}>
             <NightingaleChart
+              department='PR'
               milestoneByTrack={this.state.milestoneByTrack}
               focusedTrackId={this.state.focusedTrackId}
               handleTrackMilestoneChangeFn={(track, milestone) =>
                 this.handleTrackMilestoneChange(track, milestone)
               }
             />
-            {/* <TrackSelector
-              milestoneByTrack={this.state.milestoneByTrack}
-              focusedTrackId={this.state.focusedTrackId}
-              setFocusedTrackIdFn={this.setFocusedTrackId.bind(this)}
-            /> */}
             <KeyboardListener
               selectNextTrackFn={this.shiftFocusedTrack.bind(this, 1)}
               selectPrevTrackFn={this.shiftFocusedTrack.bind(this, -1)}

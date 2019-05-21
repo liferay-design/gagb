@@ -3,17 +3,44 @@
 import React from "react";
 import * as d3 from "d3";
 import { milestones, categoryColorScale } from "../constants";
-import { trackIds, tracks } from "../constants/tracks";
+import { trackIds as unfilteredTrackIds, tracks } from "../constants/tracks";
 import type { TrackId, Milestone, MilestoneMap } from "../constants";
+import { filter, forEach } from 'lodash'
+
+function filterTracksByDepartment(department) 
+    {
+      for (const key in tracks) {
+      const value = tracks[key]
+
+      if (value.department !== department && value.department !== 'TR') {
+        delete tracks[key];
+      }
+    }
+  }
+  
+function filterTrackIds()
+{
+  return   unfilteredTrackIds.filter((id) => {
+      let tracksHasDisplayName = false
+    
+      forEach(tracks, function(value, key) {
+          if (value.displayName === id) {
+            tracksHasDisplayName = true
+          }
+      })
+    
+      return tracksHasDisplayName
+    })}
 
 const width = 540;
 const arcMilestones = milestones.slice(1); // we'll draw the '0' milestone with a circle, not an arc.
 
 type Props = {
+  // DEPTFILTERTODO I think here is where we need to add a prop to filter the departments
   milestoneByTrack: MilestoneMap,
   focusedTrackId: TrackId,
-  handleTrackMilestoneChangeFn: (TrackId, Milestone) => void
-};
+  handleTrackMilestoneChangeFn: (TrackId, Milestone) => void,
+}
 
 class NightingaleChart extends React.Component<Props> {
   colorScale: any;
@@ -22,6 +49,9 @@ class NightingaleChart extends React.Component<Props> {
 
   constructor(props: *) {
     super(props);
+
+    filterTracksByDepartment(this.props.department)
+    this.trackIds = filterTrackIds()
 
     this.colorScale = d3.scaleSequential(d3.interpolateWarm).domain([0, 5]);
 
@@ -37,8 +67,8 @@ class NightingaleChart extends React.Component<Props> {
       .outerRadius(
         milestone => this.radiusScale(milestone) + this.radiusScale.bandwidth()
       )
-      .startAngle(-Math.PI / trackIds.length)
-      .endAngle(Math.PI / trackIds.length)
+      .startAngle(-Math.PI / this.trackIds.length)
+      .endAngle(Math.PI / this.trackIds.length)
       .padAngle(Math.PI / 20)
       .padRadius(200)
       .cornerRadius(0);
@@ -61,8 +91,8 @@ class NightingaleChart extends React.Component<Props> {
   //     .outerRadius(
   //       milestone => this.radiusScale(milestone) + this.radiusScale.bandwidth()
   //     )
-  //     .startAngle(-Math.PI / trackIds.length)
-  //     .endAngle(Math.PI / trackIds.length)
+  //     .startAngle(-Math.PI / this.trackIds.length)
+  //     .endAngle(Math.PI / this.trackIds.length)
   //     .padAngle(Math.PI / 200)
   //     .padRadius(0.45 * width)
   //     .cornerRadius(0);
@@ -72,6 +102,7 @@ class NightingaleChart extends React.Component<Props> {
     const currentMilestoneId = this.props.milestoneByTrack[
       this.props.focusedTrackId
     ];
+
     return (
       <figure>
         <style jsx>{`
@@ -170,12 +201,12 @@ class NightingaleChart extends React.Component<Props> {
           </defs>
           <circle r="270" cx="270" cy="270" fill="black" opacity="0" />
           <g transform={`translate(${width / 2},${width / 2}) rotate(-126)`}>
-            {trackIds.map((trackId, i) => {
+            {this.trackIds.map((trackId, i) => {
               const isCurrentTrack = trackId == this.props.focusedTrackId;
               return (
                 <g
                   key={trackId}
-                  transform={`rotate(${(i * 360) / trackIds.length})`}
+                  transform={`rotate(${(i * 360) / this.trackIds.length})`}
                 >
                   <path
                     d="M-66.3-260.9l2.8,8.6c39.4-9.8,87.7-9.8,127.1,0l2.8-8.6C22.3-272.2-22.3-272.2-66.3-260.9z"
@@ -186,7 +217,7 @@ class NightingaleChart extends React.Component<Props> {
                     transform="translate(-2,4)"
                     className={"label"}
                     style={{
-                      fill: categoryColorScale(tracks[trackId].category),
+                      fill: categoryColorScale(tracks[trackId].department),
                       fontWeight: "900",
                       textTransform: "uppercase",
                       letterSpacing: "1.2px",

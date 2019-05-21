@@ -15,7 +15,7 @@ const TOKEN_PATH = `${process.cwd()}/token.json`
 
 /* Program Init */
 // TODO: Add Communication Team Docs
-fetchRows('1SSXTk-tmV89v7EzGpK81PHLlUcbZKehYkVcjvEgnsbY', 'Sheet1')
+fetchRows('1SSXTk-tmV89v7EzGpK81PHLlUcbZKehYkVcjvEgnsbY', 'live')
   .then(({ data }) => {
     const tracksObject = data.map(mapHtmlToTracks).reduce((prev, curr) => {
       return {...prev, ...curr}
