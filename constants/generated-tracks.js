@@ -121,7 +121,7 @@ export const tracks = {
                 "signals": [
                     "Coming up with new techniques or ways to effectively increase the impact of  teams.",
                     "Overcomes frustration with organizational limitations to drive their ideas to implementation",
-                    "Proven by execution"
+                    "Has a track record of positively impacting teams. "
                 ]
             },
             {
@@ -198,7 +198,7 @@ export const tracks = {
             {
                 "summary": "M1:  Embodies self-mastery and personal responsibility, takes initiative to serve the team.",
                 "signals": [
-                    "Starts delegating tasks",
+                    "Effectively shares responsibility",
                     "Informally mentors individuals in an ad-hoc way",
                     "Supports new hires",
                     "Conveys knowledge of the right way to do things.",
@@ -430,7 +430,7 @@ export const tracks = {
             {
                 "summary": "M1: Support",
                 "signals": [
-                    "Strong graphic design foundation: grid, typo, color definition",
+                    "Strong graphic design foundation: grid, typography, color theory",
                     "Have a strong visual background in print or digital media, advertising, illustration, fine arts, architecture, motion, film, etc",
                     "Becoming familiar with the limitations and requirements of designing in products and digital scenarios, knowledge and familiarity of designing within systems",
                     "Creating visual elements (motion, icons, illustration, etc) within an established system",

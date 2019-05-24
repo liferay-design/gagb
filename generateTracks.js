@@ -127,6 +127,8 @@ async function authorize() {
     console.log('Token stored to', TOKEN_PATH)
   } else {
     var tokens = JSON.parse(fs.readFileSync(TOKEN_PATH))
+    // can you upload the token to netlify?
+    // in the .env file?
   }
 
   oAuth2Client.setCredentials(tokens)
