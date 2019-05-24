@@ -16,9 +16,8 @@
   "scripts": {
     "dev": "node generateTracks && next",
     "export": "next build && next export",
-    "build": "node generateTracks && next build && next export",
-    "flow": "flow",
-    "deploy": "yarn run export && cd out && now"
+    "build": "node token && node generateTracks && next build && next export",
+    "flow": "flow"
   },
   "devDependencies": {
     "dotenv": "^7.0.0",
