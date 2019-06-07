@@ -57,7 +57,7 @@ class PointSummaries extends React.Component<Props> {
             border-radius: 50%;
             width: 6rem;
             height: 6rem;
-            background: #fff;
+            background: white;
           }
           .point-summary-label {
             font-size: 12px;

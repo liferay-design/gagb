@@ -4,6 +4,7 @@ import { milestones, categoryColorScale } from "../../../constants";
 import React from "react";
 import type { MilestoneMap, TrackId, Milestone } from "../../../constants";
 import { trackIds, tracks } from "../../../constants/tracks";
+import {colors } from "../../theme"
 
 type Props = {
   milestoneByTrack: MilestoneMap,
@@ -28,24 +29,12 @@ class Track extends React.Component<Props> {
               h2 {
                 margin: 0 0 10px 0;
               }
-              p.track-description {
-                margin-top: 0;
-                padding-bottom: 20px;
-                background-image: linear-gradient(
-                  to left,
-                  #e8e8e7 60%,
-                  #fff 0%
-                );
-                background-position: bottom;
-                background-size: 10px 1px;
-                background-repeat: repeat-x;
-              }
               table {
                 border-spacing: 8px;
               }
               td {
                 padding: 8px;
-                background: #f7f8f9;
+                background: ${colors['neutral9']};
               }
               ul {
                 line-height: 1.5em;
@@ -59,7 +48,7 @@ class Track extends React.Component<Props> {
               }
             `}</style>
             <h2>{track.displayName}</h2>
-            <p className="track-description">{track.description}</p>
+            <p>{track.description}</p>
             <div style={{ display: "flex" }}>
               {currentMilestone ? (
                 <div style={{ flex: 1 }}>
