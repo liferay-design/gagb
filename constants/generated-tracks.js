@@ -577,11 +577,6 @@ export const tracks = {
         ],
         "description": "Graphic design combines visual artifacts like illustrations, photography, typography to communicate and problem solve."
     },
-    "": {
-        "department": "CO",
-        "displayName": "",
-        "milestones": []
-    },
     "BRANDING": {
         "department": "CO",
         "displayName": "BRANDING",
@@ -621,6 +616,52 @@ export const tracks = {
                 "summary": "M5: Architect",
                 "signals": [
                     "Well-known in the industry with successful branding systems and campaigns in the market, creating and leading the branding  standard, creating trends"
+                ]
+            }
+        ]
+    },
+    "ILLUSTRATION": {
+        "department": "CO",
+        "displayName": "ILLUSTRATION",
+        "milestones": [
+            {
+                "summary": "M1: Support",
+                "signals": [
+                    "Knowledge of design principles: color definition, visual hierarchy and composition",
+                    "Visual background in print or digital media, illustration, fine arts, architecture, etc.",
+                    "Familiar with the requirements and limitations of designing for print vs. digital",
+                    "Understand how to illustrate a narrative",
+                    "Understand the importance of sketching"
+                ]
+            },
+            {
+                "summary": "M2: Build",
+                "signals": [
+                    "Create vectorized or high-res illustrations in a neat and methodic way to be used in print and digital mediums, in both small and large formats",
+                    "Concept and complete illustrations at an individual project level",
+                    "Able to work with stakeholder independently",
+                    "Contribute to illustration libraries within established systems"
+                ]
+            },
+            {
+                "summary": "M3: Lead",
+                "signals": [
+                    "Coordinate illustrative efforts for projects across departments",
+                    "Create/maintain style guides and resources for other designers (CC libraries, illustration assets kit, etc.)",
+                    "Art direct",
+                    "Train others on best practices and methods"
+                ]
+            },
+            {
+                "summary": "M4: Strategize",
+                "signals": [
+                    "Lead illustration efforts at an organizational level"
+                ]
+            },
+            {
+                "summary": "M5: Architect",
+                "signals": [
+                    "Well-known in the industry with successful illustrations in the market, creating and leading the visual standard, creating trends"
                 ]
             }
         ]
@@ -727,10 +768,5 @@ export const tracks = {
             }
         ],
         "description": "Videography includes video production and pre/post production. Videos may be viewed online or at an event."
-    },
-    "TITLES": {
-        "department": "CO",
-        "displayName": "TITLES",
-        "milestones": []
     }
 }
