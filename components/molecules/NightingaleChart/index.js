@@ -7,6 +7,7 @@ import { trackIds as unfilteredTrackIds, tracks } from "../../../constants/track
 import type { TrackId, Milestone, MilestoneMap } from "../../../constants";
 import { filter, forEach } from 'lodash'
 import { colors } from '../../theme'
+import { Logo } from '../../atoms'
 
 function filterTracksByDepartment(department) 
     {
@@ -293,6 +294,9 @@ class NightingaleChart extends React.Component<Props> {
                 </g>
               )
             })}
+          </g>
+          <g style={{transform:"translate(44%,0%)"}}>
+            <Logo width="4rem" color={colors['primary']} />
           </g>
         </svg>
       </figure>
