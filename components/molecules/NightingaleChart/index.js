@@ -166,7 +166,7 @@ class NightingaleChart extends React.Component<Props> {
               </textPath>
               <textPath
                 startOffset="10.5%"
-                style={{ fill: `${colors['[primary]']}` }}
+                style={{ fill: `${colors[['primary']]}` }}
                 xlinkHref="#skillPath"
               >
                 Product Design
@@ -295,7 +295,7 @@ class NightingaleChart extends React.Component<Props> {
               )
             })}
           </g>
-          <g style={{transform:"translate(44%,0%)"}}>
+          <g style={{ transform: 'translate(44%,0%)' }}>
             <Logo width="4rem" color={colors['primary']} />
           </g>
         </svg>
