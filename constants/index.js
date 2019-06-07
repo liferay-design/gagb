@@ -24,13 +24,13 @@ export const milestoneToPoints = (milestone: Milestone): number => {
     case 1:
       return 1
     case 2:
-      return 3
+      return 4
     case 3:
-      return 6
+      return 8
     case 4:
-      return 12
+      return 16
     case 5:
-      return 20
+      return 32
     default:
       return 0
   }

@@ -45,26 +45,26 @@ export const tracks = {
                 ]
             }
         ],
-        "description": "Producing excellence starts with paying attention to details, both in what you do and in what others do. This track measures your ability to produce high-quality outcomes in your daily work consistently."
+        "description": "Producing excellence starts with paying attention to details, in your personal efforts as well as the team as a whole. This track measures your ability to produce high-quality outcomes in your daily work consistently."
     },
     "COLLABORATION": {
         "department": "TR",
         "displayName": "COLLABORATION",
         "milestones": [
             {
-                "summary": "M1: Help others as you can, giving and receiving feedback effectively and efficiently",
+                "summary": "M1: Help others as you can, giving and receiving feedback effectively and efficiently",
                 "signals": [
                     "Attend and help conduct design critiques session",
                     "Help apply methods in order to increase the collaboration effectively in the team."
                 ]
             },
             {
-                "summary": "M2:  Use your mature knowledge to build and create, starting to help others to grow: ",
+                "summary": "M2:  Use your mature knowledge to build and create, starting to help others to grow: ",
                 "signals": [
                     "Propose and help execute methods.",
                     "Proactively provide feedback to others.",
                     "Consistently provide high-quality work and feedback",
-                    "Help M1 grow in communication and collaboration",
+                    "Help M1 grow in communication and collaboration",
                     "Suggest viable ideas to grow the communication and collaboration on your team.",
                     "Share your knowledge (host workshops or blog about new techniques or processes you’ve employed)"
                 ]
@@ -160,7 +160,7 @@ export const tracks = {
                 "signals": [
                     "Attends community, customer and/or industry events.",
                     "Take an active part on 3rd party events, obtaining feedback actively and helping Liferay staff in promotion and recruiting tasks",
-                    "Help M1 to grow in Advocacy",
+                    "Help M1 to grow in Advocacy",
                     "Regular publication of blog entries, answers in forums, articles in social networks and other media",
                     "Organize local events"
                 ]
@@ -202,8 +202,8 @@ export const tracks = {
                     "Informally mentors individuals in an ad-hoc way",
                     "Supports new hires",
                     "Conveys knowledge of the right way to do things.",
-                    "Supporting  Design OKRs",
-                    "Executing  and leading other individual  to follow/pursue (roadmap, backlog, and Design direction)."
+                    "Supporting  Design Objectives and Key Results",
+                    "Executing  and leading other individuals to follow/pursue (roadmap, backlog, and Design direction)."
                 ]
             },
             {
@@ -219,7 +219,6 @@ export const tracks = {
             {
                 "summary": "M3:  Assumes responsibility for the success of others.",
                 "signals": [
-                    "Focus on success of their people.",
                     "Knows how to keep people engaged, empowered and letting them develop their skills"
                 ]
             },
@@ -538,7 +537,7 @@ export const tracks = {
                     "Visual background in print or digital media, advertising, illustration, fine arts, architecture, motion, film, etc.",
                     "Able to  create visual components (logos, icons, illustrations, motion, etc.)",
                     "Familiar with the requirements and limitations of designing for print vs. digital",
-                    "Understanding of the relationship between visuals and copy in a way where each enhances the other",
+                    "Understand the relationship between visuals and copy in a way where each enhances the other",
                     "Familiar with brand design systems: typography, color palettes, imagery, etc.",
                     "Familiar with the company’s core values, personality, audiences, and goals."
                 ]
@@ -546,27 +545,27 @@ export const tracks = {
             {
                 "summary": "M2: Build",
                 "signals": [
-                    "Create and complete design at an individual project level",
+                    "Create and completes design at an individual project level",
                     "Able to work with stakeholder independently",
                     "Strong understanding of layout design (grids/guides, spacing, readability)",
                     "Create visual components for libraries of established systems",
-                    "Create and define branding systems for projects"
+                    "Create and define visual branding systems for projects"
                 ]
             },
             {
                 "summary": "M3: Lead",
                 "signals": [
-                    "Coordinating design and creative efforts for projects across departments",
-                    "Art directing",
-                    "Documenting brand system specifications and creating resources for others (CC libraries, Dropbox folder, templates, etc.)",
-                    "Training others on proper execution of branding system",
-                    "Strengthening communication and project management skills"
+                    "Coordinate design and creative efforts for projects across departments",
+                    "Art direct",
+                    "Document brand system specifications and creating resources for others (CC libraries, Dropbox folder, templates, etc.)",
+                    "Train others on proper execution of branding system",
+                    "Strengthen communication and project management skills"
                 ]
             },
             {
                 "summary": "M4: Strategize",
                 "signals": [
-                    "Leading design and branding at an organizational level"
+                    "Lead design and branding at an organizational level"
                 ]
             },
             {
@@ -578,116 +577,10 @@ export const tracks = {
         ],
         "description": "Graphic design combines visual artifacts like illustrations, photography, typography to communicate and problem solve."
     },
-    "VIDEOGRAPHY": {
+    "": {
         "department": "CO",
-        "displayName": "VIDEOGRAPHY",
-        "milestones": [
-            {
-                "summary": "M1: Support",
-                "signals": [
-                    "Signal"
-                ]
-            },
-            {
-                "summary": "M2: Build",
-                "signals": [
-                    "Signal"
-                ]
-            },
-            {
-                "summary": "M3: Lead",
-                "signals": [
-                    "Signal"
-                ]
-            },
-            {
-                "summary": "M4: Strategize",
-                "signals": [
-                    "Signal"
-                ]
-            },
-            {
-                "summary": "M5: Architect",
-                "signals": [
-                    "Signal"
-                ]
-            }
-        ],
-        "description": "Videography includes video production and pre/post production. Videos may be viewed online or at an event."
-    },
-    "PHOTOGRAPHY": {
-        "department": "CO",
-        "displayName": "PHOTOGRAPHY",
-        "milestones": [
-            {
-                "summary": "M1: Support",
-                "signals": [
-                    "Signal 1"
-                ]
-            },
-            {
-                "summary": "M2: Build",
-                "signals": [
-                    "Signal"
-                ]
-            },
-            {
-                "summary": "M3: Lead",
-                "signals": [
-                    "Signal"
-                ]
-            },
-            {
-                "summary": "M4: Strategize",
-                "signals": [
-                    "Signal"
-                ]
-            },
-            {
-                "summary": "M5: Architect",
-                "signals": [
-                    "Signal"
-                ]
-            }
-        ],
-        "description": "Subtitle for the skill — a few lines only "
-    },
-    "ILLUSTRATION": {
-        "department": "CO",
-        "displayName": "ILLUSTRATION",
-        "milestones": [
-            {
-                "summary": "M1: Support",
-                "signals": [
-                    "Signal 1"
-                ]
-            },
-            {
-                "summary": "M2: Build",
-                "signals": [
-                    "Signal"
-                ]
-            },
-            {
-                "summary": "M3: Lead",
-                "signals": [
-                    "Signal"
-                ]
-            },
-            {
-                "summary": "M4: Strategize",
-                "signals": [
-                    "Signal"
-                ]
-            },
-            {
-                "summary": "M5: Architect",
-                "signals": [
-                    "Signal"
-                ]
-            }
-        ],
-        "description": "Subtitle for the skill — a few lines only "
+        "displayName": "",
+        "milestones": []
     },
     "BRANDING": {
         "department": "CO",
@@ -696,71 +589,148 @@ export const tracks = {
             {
                 "summary": "M1: Support",
                 "signals": [
-                    "Signal 1"
+                    "Familiar with the market and company brand",
+                    "Familiar with the company’s core values, personality, audiences, and goals.",
+                    "Research industry competitors and best practices",
+                    "Contribute to the consistency and protection of established brand guidlines"
                 ]
             },
             {
                 "summary": "M2: Build",
                 "signals": [
-                    "Signal"
+                    "Grow the visual brand by adapting and evolving it to the needs and business goals of the company",
+                    "Apply branding systems to projects at an individual project level",
+                    "Able to work with stakeholders independently",
+                    "Help define branding systems for projects, which include messaging, tone, and other non-visuals"
                 ]
             },
             {
                 "summary": "M3: Lead",
                 "signals": [
-                    "Signal"
+                    "Relevant industry experience",
+                    "Can coordinate the branding strategy for all products in the company"
                 ]
             },
             {
                 "summary": "M4: Strategize",
                 "signals": [
-                    "Signal"
+                    "Can envision the branding strategy for the company and its products"
                 ]
             },
             {
                 "summary": "M5: Architect",
                 "signals": [
-                    "Signal"
+                    "Well-known in the industry with successful branding systems and campaigns in the market, creating and leading the branding  standard, creating trends"
                 ]
             }
-        ],
-        "description": "Subtitle for the skill — a few lines only "
+        ]
     },
-    "MARKETING": {
+    "PHOTOGRAPHY": {
         "department": "CO",
-        "displayName": "MARKETING",
+        "displayName": "PHOTOGRAPHY",
         "milestones": [
             {
                 "summary": "M1: Support",
                 "signals": [
-                    "Signal 1"
+                    "Strong photography foundation: composition, tonal contrast, colors",
+                    "Understand how to intentionally frame a shot with a focal point",
+                    "Basic knowledge of equipment: camera brands, lenses, shutter speed, aperture",
+                    "Experience in portrait (posed) and documentary (candid) shoots",
+                    "Experience with natural and artificial lighting, a plus",
+                    "Post-processing: basic color correction and exposure settings, fixing distortions or blemishes, cropping/framing, stylistic color toning, various export settings",
+                    "Familiar with the requirements and limitations of different mediums"
                 ]
             },
             {
                 "summary": "M2: Build",
                 "signals": [
-                    "Signal"
+                    "Regularly contribute photographs to new and established libraries/albums",
+                    "Define new styles and guides, and evolve current ones",
+                    "Manage stock photo library",
+                    "Curate photos for an album/project from a camera photo dump",
+                    "Comfortable art directing subjects of photoshoots",
+                    "Intimate knowledge of good vs. bad lighting conditions",
+                    "A sharp eye that identifies and adjusts distracting details, unflattering poses, clutter, etc. amidst shooting/directing",
+                    "Photograph and post-process at an individual project level"
                 ]
             },
             {
                 "summary": "M3: Lead",
                 "signals": [
-                    "Signal"
+                    "Take a stronger directorial role in photoshoots, which includes conceptualizing, art direction, and working with stakeholders",
+                    "Coordinate efforts for projects involving multiple departments",
+                    "Strengthen communication and project management skills",
+                    "Train others, and oversee them in, assisting in various phases of production",
+                    "Expertise in lighting and how to manipulate light (natural, artificial) in a variety of settings",
+                    "Expertise in portraiture",
+                    "Take lead on setting up ad-hoc photography teams (shooting schedules, equipment, communication) for large corporate events/conferences"
                 ]
             },
             {
                 "summary": "M4: Strategize",
                 "signals": [
-                    "Signal"
+                    "Lead photography efforts and at an organizational level",
+                    "Initiate new photography projects and identifying existing ones for improvement"
                 ]
             },
             {
                 "summary": "M5: Architect",
                 "signals": [
-                    "Signal"
+                    "Well-known in the industry and stock photo community with professional-grade photographs in the market, creating and leading the visual standard"
                 ]
             }
         ],
-        "description": "Subtitle for the skill — a few lines only "
+        "description": "Photography includes planning and executing photo shoots, post-processing, and photo library curation. Photos may be used in print and digitally, across various mediums."
+    },
+    "VIDEOGRAPHY": {
+        "department": "CO",
+        "displayName": "VIDEOGRAPHY",
+        "milestones": [
+            {
+                "summary": "M1: Support",
+                "signals": [
+                    "Strong videography foundation: storyboarding, lighting, audio, camera work, editing",
+                    "Strong visual background fine arts, photography, motion, film, etc.",
+                    "Familiar with creating basic animated components (lower thirds, intro/outro, floating text, etc.)",
+                    "Familiar with the requirements and limitations of different viewing platforms"
+                ]
+            },
+            {
+                "summary": "M2: Build",
+                "signals": [
+                    "Storyboard (or equivalent) concepts to convey narration, transitions, tone, mood, etc.",
+                    "Complete entire production at an individual project level (Location scout, set up, film, edit, etc.)",
+                    "Create libraries of visual and audio components for new and established systems",
+                    "Define new styles and guides, and evolve current ones"
+                ]
+            },
+            {
+                "summary": "M3: Lead",
+                "signals": [
+                    "Take a stronger directorial role in the production of videos, which includes driving art direction and working with stakeholders on messaging",
+                    "Train others, and oversee them in, assisting in various phases of production",
+                    "Take lead on setting up ad-hoc videography teams (shooting schedules, equipment, communication) for large corporate events/conferences"
+                ]
+            },
+            {
+                "summary": "M4: Strategize",
+                "signals": [
+                    "Lead video efforts and at an organizational level",
+                    "Initiate new video projects and identifying existing ones for improvement"
+                ]
+            },
+            {
+                "summary": "M5: Architect",
+                "signals": [
+                    "Well-known in the industry with successful and video campaigns in the market, creating and leading the visual standard"
+                ]
+            }
+        ],
+        "description": "Videography includes video production and pre/post production. Videos may be viewed online or at an event."
+    },
+    "TITLES": {
+        "department": "CO",
+        "displayName": "TITLES",
+        "milestones": []
     }
 }
