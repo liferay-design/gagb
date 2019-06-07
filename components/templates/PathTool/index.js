@@ -4,8 +4,7 @@ import {
   KeyboardListener,
   NightingaleChart,
   PointSummaries,
-  TitleSelector,
-  TrackSelector
+  TitleSelector
 } from '../../molecules'
 import { Track } from '../../atoms'
 import { colors } from '../../theme'
