@@ -1,6 +1,7 @@
 // @flow
 import * as d3 from 'd3'
 import { titles } from './titles'
+import { colors } from '../components/theme'
 import { trackIds, tracks } from './tracks'
 
 export type Track = {
@@ -83,7 +84,11 @@ export const totalPointsFromMilestoneMap = (
 export const categoryColorScale = d3
          .scaleOrdinal()
          .domain(categoryIds)
-         .range(['#7d8b94', '#0b5fff', '#7d8b94'])
+         .range([
+           `${colors['neutral5']}`,
+           `${colors['primary']}`,
+           `${colors['neutral5']}`,
+         ])
 
 
 export const eligibleTitles = (milestoneMap: MilestoneMap): string[] => {

@@ -7,7 +7,8 @@ import {
   TitleSelector,
   TrackSelector
 } from '../../molecules'
-import { Logo,Track } from '../../atoms'
+import { Track } from '../../atoms'
+import { colors } from '../../theme'
 import {
   eligibleTitles,
   trackIds,
@@ -132,7 +133,8 @@ class PathTool extends React.Component<Props, PathToolAppState> {
           textarea,
           select,
           button {
-            font-family: "Source Sans Pro", Tahoma, "Trebuchet MS", sans-serif;
+            font-family: 'Source Sans Pro', Tahoma, 'Trebuchet MS',
+              sans-serif;
           }
           main {
             width: 100%;
@@ -165,17 +167,17 @@ class PathTool extends React.Component<Props, PathToolAppState> {
         `}</style>
         <header
           style={{
-            background: "#f7f8f9",
-            padding: "7rem 0 1rem",
-            width: "100%"
+            background: `${colors['neutral9']}`,
+            padding: '7rem 0 1rem',
+            width: '100%',
           }}
         >
           <div
             style={{
-              justifyContent: "space-between",
-              display: "flex",
-              maxWidth: "64rem",
-              margin: "0 auto 2rem"
+              justifyContent: 'space-between',
+              display: 'flex',
+              maxWidth: '64rem',
+              margin: '0 auto 2rem',
             }}
           >
             <form>
@@ -194,21 +196,26 @@ class PathTool extends React.Component<Props, PathToolAppState> {
                 setTitleFn={title => this.setTitle(title)}
               />
             </form>
-            <PointSummaries milestoneByTrack={this.state.milestoneByTrack} />
+            <PointSummaries
+              milestoneByTrack={this.state.milestoneByTrack}
+            />
           </div>
           <div
             style={{
-              background: "#e8e8e7",
-              width: "100%",
-              margin: "0 auto"
+              background: `${colors['neutral8']}`,
+              width: '100%',
+              margin: '0 auto',
             }}
-          >
-          </div>
+          />
         </header>
-        <div style={{ display: "flex", width: "64rem", margin: "0 auto 30vh" }}>
-          <div style={{ display: "table", position:"sticky",top:"1rem"}}>
+        <div
+          style={{ display: 'flex', width: '64rem', margin: '0 auto 30vh' }}
+        >
+          <div
+            style={{ display: 'table', position: 'sticky', top: '1rem' }}
+          >
             <NightingaleChart
-              department='PR'
+              department="PR"
               milestoneByTrack={this.state.milestoneByTrack}
               focusedTrackId={this.state.focusedTrackId}
               handleTrackMilestoneChangeFn={(track, milestone) =>
@@ -229,26 +236,26 @@ class PathTool extends React.Component<Props, PathToolAppState> {
             />
             <div
               style={{
-                display: "flex",
-                marginLeft: "-45px",
-                textAlign: "center",
-                flexDirection: "column",
-                alignItems: "center"
+                display: 'flex',
+                marginLeft: '-45px',
+                textAlign: 'center',
+                flexDirection: 'column',
+                alignItems: 'center',
               }}
             >
-              <div style={{ flex: 1, color: "#7d8b94" }}>
-                Learn how to use this tool:{" "}
+              <div style={{ flex: 1, color: `${colors['neutral5']}` }}>
+                Learn how to use this tool:{' '}
                 <a
                   href="https://liferay.design/handbook/grow-and-get-better"
                   target="_blank"
-                  style={{ color: "#0b5fff", fontWeight: "bold" }}
+                  style={{ color: `${colors['primary']}`, fontWeight: 'bold' }}
                 >
                   Grow at Liferay
                 </a>
               </div>
             </div>
           </div>
-          <div style={{ flex: 1, margin: "6rem 0 0 4rem" }}>
+          <div style={{ flex: 1, margin: '6rem 0 0 4rem' }}>
             <Track
               milestoneByTrack={this.state.milestoneByTrack}
               trackId={this.state.focusedTrackId}
@@ -259,7 +266,7 @@ class PathTool extends React.Component<Props, PathToolAppState> {
           </div>
         </div>
       </main>
-    );
+    )
   }
 
   handleTrackMilestoneChange(trackId: TrackId, milestone: Milestone) {
