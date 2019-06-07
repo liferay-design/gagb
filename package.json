@@ -14,7 +14,7 @@
     "reakit": "^1.0.0-beta.1"
   },
   "scripts": {
-    "dev": "node generateTracks && next",
+    "dev": "node generateTracks && next -p 8080 --hostname 0.0.0.0",
     "export": "next build && next export",
     "build": "node token && node generateTracks && next build && next export",
     "flow": "flow"
