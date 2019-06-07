@@ -1,9 +1,9 @@
 // @flow
 
-import { milestones, categoryColorScale } from "../constants";
+import { milestones, categoryColorScale } from "../../../constants";
 import React from "react";
-import type { MilestoneMap, TrackId, Milestone } from "../constants";
-import { trackIds, tracks } from "../constants/tracks";
+import type { MilestoneMap, TrackId, Milestone } from "../../../constants";
+import { trackIds, tracks } from "../../../constants/tracks";
 
 type Props = {
   milestoneByTrack: MilestoneMap,
@@ -14,7 +14,6 @@ type Props = {
 class Track extends React.Component<Props> {
   render() {
     const track = tracks[this.props.trackId];
-// console.log(track, this.props.trackId)
     const currentMilestoneId = this.props.milestoneByTrack[this.props.trackId];
     const currentMilestone = track.milestones[currentMilestoneId - 1];
     return (
@@ -84,20 +83,9 @@ class Track extends React.Component<Props> {
                               const isMet = milestone <= currentMilestoneId;
                               return (
                                 <td
-                                  key={milestone} //   this.props.handleTrackMilestoneChangeFn( // onClick={() =>
-                                  //     this.props.trackId,
-                                  //     milestone
-                                  //   )
-                                  // }
+                                  key={milestone}
                                   className="level"
                                   style={{
-                                    // boxShadow: `${
-                                    //   milestone === currentMilestoneId
-                                    //     ? "0 0 8px 1px rgba(11, 95, 255, .8)"
-                                    //     : isMet
-                                    //     ? categoryColorScale(track.category)
-                                    //     : "0 0 0 #f7f8f9"
-                                    // }`,
                                     background: isMet
                                       ? categoryColorScale(track.category)
                                       : undefined
@@ -109,18 +97,11 @@ class Track extends React.Component<Props> {
                       </tbody>
                     </table>
                   </div>
-                  {/* <h4>Example behaviors:</h4> */}
                   <ul>
                     {currentMilestone.signals.map((signal, i) => (
                       <li key={i}>{signal}</li>
                     ))}
                   </ul>
-                  {/* <h4>Example tasks:</h4>
-              <ul>
-                {currentMilestone.examples.map((example, i) => (
-                  <li key={i}>{example}</li>
-                ))}
-              </ul> */}
                 </div>
               ) : null}
             </div>

@@ -1,7 +1,7 @@
-import SnowflakeApp from "../components/SnowflakeApp";
+import PathTool from "../components/templates/PathTool";
 
 export default () => (
   <div>
-    <SnowflakeApp />
+    <PathTool />
   </div>
 );

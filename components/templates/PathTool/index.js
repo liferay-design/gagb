@@ -1,31 +1,30 @@
 // @flow
 
-import TrackSelector from "../components/TrackSelector";
-import NightingaleChart from "../components/NightingaleChart";
-import KeyboardListener from "../components/KeyboardListener";
-import Track from "../components/Track";
-import Wordmark from "../components/Wordmark";
-import LevelThermometer from "../components/LevelThermometer";
+import {
+  KeyboardListener,
+  NightingaleChart,
+  PointSummaries,
+  TitleSelector,
+  TrackSelector
+} from '../../molecules'
+import { Logo,Track } from '../../atoms'
 import {
   eligibleTitles,
   trackIds,
   milestones,
   milestoneToPoints
-} from "../constants";
-import PointSummaries from "../components/PointSummaries";
-import type { Milestone, MilestoneMap, TrackId } from "../constants";
+} from "../../../constants";
+import type { Milestone, MilestoneMap, TrackId } from "../../../constants";
 import React from "react";
-import TitleSelector from "../components/TitleSelector";
-import DepartmentSelector from "./DepartmentSelector";
 
-type SnowflakeAppState = {
+type PathToolAppState = {
   milestoneByTrack: MilestoneMap,
   name: string,
   title: string,
   focusedTrackId: TrackId
 };
 
-const hashToState = (hash: String): ?SnowflakeAppState => {
+const hashToState = (hash: String): ?PathToolAppState => {
   // DEPTFILTERTODO we'd need to add some sort of department designation to the hash
   if (!hash) return null;
   const result = defaultState();
@@ -59,7 +58,7 @@ const coerceMilestone = (value: number): Milestone => {
   }
 };
 
-const emptyState = (): SnowflakeAppState => {
+const emptyState = (): PathToolAppState => {
   return {
     name: "",
     title: "",
@@ -74,7 +73,7 @@ const emptyState = (): SnowflakeAppState => {
   };
 };
 
-const defaultState = (): SnowflakeAppState => {
+const defaultState = (): PathToolAppState => {
   // DEPTFILTERTODO need to add a default department?
   return {
     name: "[Enter Name]",
@@ -90,7 +89,7 @@ const defaultState = (): SnowflakeAppState => {
   };
 };
 
-const stateToHash = (state: SnowflakeAppState) => {
+const stateToHash = (state: PathToolAppState) => {
   // DEPTFILTERTODO add filter here?
   if (!state || !state.milestoneByTrack) return null;
   const values = trackIds
@@ -101,7 +100,7 @@ const stateToHash = (state: SnowflakeAppState) => {
 
 type Props = {};
 
-class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
+class PathTool extends React.Component<Props, PathToolAppState> {
   constructor(props: Props) {
     super(props);
     this.state = emptyState();
@@ -302,4 +301,4 @@ class SnowflakeApp extends React.Component<Props, SnowflakeAppState> {
   }
 }
 
-export default SnowflakeApp;
+export default PathTool;

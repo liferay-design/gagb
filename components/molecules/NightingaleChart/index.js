@@ -2,9 +2,9 @@
 
 import React from "react";
 import * as d3 from "d3";
-import { milestones, categoryColorScale } from "../constants";
-import { trackIds as unfilteredTrackIds, tracks } from "../constants/tracks";
-import type { TrackId, Milestone, MilestoneMap } from "../constants";
+import { milestones, categoryColorScale } from "../../../constants";
+import { trackIds as unfilteredTrackIds, tracks } from "../../../constants/tracks";
+import type { TrackId, Milestone, MilestoneMap } from "../../../constants";
 import { filter, forEach } from 'lodash'
 
 function filterTracksByDepartment(department) 
