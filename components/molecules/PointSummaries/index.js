@@ -5,8 +5,8 @@ import {
   milestoneToPoints,
   trackIds,
   totalPointsFromMilestoneMap
-} from "../constants";
-import type { MilestoneMap } from "../constants";
+} from "../../../constants";
+import type { MilestoneMap } from "../../../constants";
 import React from "react";
 
 type Props = {

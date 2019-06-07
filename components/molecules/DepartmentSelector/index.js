@@ -1,8 +1,8 @@
 // @flow
 
 import React from 'react'
-import { departments } from '../constants'
-import type { MilestoneMap } from '../constants'
+import { departments } from '../../../constants'
+import type { MilestoneMap } from '../../../constants'
 
 type Props = {
   milestoneByTrack: MilestoneMap,
