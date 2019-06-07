@@ -6,6 +6,7 @@ import { milestones, categoryColorScale } from "../../../constants";
 import { trackIds as unfilteredTrackIds, tracks } from "../../../constants/tracks";
 import type { TrackId, Milestone, MilestoneMap } from "../../../constants";
 import { filter, forEach } from 'lodash'
+import { colors } from '../../theme'
 
 function filterTracksByDepartment(department) 
     {
@@ -124,7 +125,7 @@ class NightingaleChart extends React.Component<Props> {
             z-index: -1;
           }
           .track-milestone {
-            fill: #f7f8f9;
+            fill: ${colors['neutral9']};
             cursor: pointer;
             overflow: visible;
           }
@@ -134,7 +135,7 @@ class NightingaleChart extends React.Component<Props> {
             stroke-width: 0;
           }
           .track-milestone:hover {
-            fill: #c4cacb;
+            fill: ${colors['neutral7']};
           }
           .label {
             transform: translate(0, -264), rotate(180);
@@ -157,14 +158,14 @@ class NightingaleChart extends React.Component<Props> {
             >
               <textPath
                 startOffset="60.5%"
-                style={{ fill: '#7d8b94' }}
+                style={{ fill: `${colors['neutral5']}` }}
                 xlinkHref="#skillPath"
               >
                 Core Skills
               </textPath>
               <textPath
                 startOffset="10.5%"
-                style={{ fill: '#0b5FFF' }}
+                style={{ fill: `${colors['[primary]']}` }}
                 xlinkHref="#skillPath"
               >
                 Product Design
@@ -198,7 +199,7 @@ class NightingaleChart extends React.Component<Props> {
               <feDropShadow
                 dx="0"
                 dy="0"
-                floodColor="#0b5fff"
+                floodColor={colors['primary']}
                 floodOpacity="1"
                 stdDeviation="4"
               />
