@@ -33,8 +33,8 @@ const hashToState = (hash: String): ?PathToolAppState => {
   trackIds.forEach((trackId, i) => {
     result.milestoneByTrack[trackId] = coerceMilestone(Number(hashValues[i]));
   });
-  if (hashValues[15]) result.name = decodeURI(hashValues[15]);
-  if (hashValues[16]) result.title = decodeURI(hashValues[16]);
+  if (hashValues[10]) result.name = decodeURI(hashValues[10]);
+  if (hashValues[11]) result.title = decodeURI(hashValues[11]);
   return result;
 };
 
