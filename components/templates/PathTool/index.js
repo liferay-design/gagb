@@ -132,8 +132,7 @@ class PathTool extends React.Component<Props, PathToolAppState> {
           textarea,
           select,
           button {
-            font-family: 'Source Sans Pro', Tahoma, 'Trebuchet MS',
-              sans-serif;
+            font-family: 'Source Sans Pro', Tahoma, 'Trebuchet MS', sans-serif;
           }
           main {
             width: 100%;
@@ -195,9 +194,7 @@ class PathTool extends React.Component<Props, PathToolAppState> {
                 setTitleFn={title => this.setTitle(title)}
               />
             </form>
-            <PointSummaries
-              milestoneByTrack={this.state.milestoneByTrack}
-            />
+            <PointSummaries milestoneByTrack={this.state.milestoneByTrack} />
           </div>
           <div
             style={{
@@ -207,12 +204,8 @@ class PathTool extends React.Component<Props, PathToolAppState> {
             }}
           />
         </header>
-        <div
-          style={{ display: 'flex', width: '64rem', margin: '0 auto 30vh' }}
-        >
-          <div
-            style={{ display: 'table', position: 'sticky', top: '1rem' }}
-          >
+        <div style={{ display: 'flex', width: '64rem', margin: '0 auto 30vh' }}>
+          <div style={{ display: 'table', position: 'sticky', top: '1rem' }}>
             <NightingaleChart
               department="PR"
               milestoneByTrack={this.state.milestoneByTrack}
@@ -245,7 +238,7 @@ class PathTool extends React.Component<Props, PathToolAppState> {
               <div style={{ flex: 1, color: `${colors['neutral5']}` }}>
                 Learn how to use this tool:{' '}
                 <a
-                  href="https://liferay.design/handbook/grow-and-get-better"
+                  href="https://liferay.design/handbook/grow/career-paths/individual-contributor/"
                   target="_blank"
                   style={{ color: `${colors['primary']}`, fontWeight: 'bold' }}
                 >
