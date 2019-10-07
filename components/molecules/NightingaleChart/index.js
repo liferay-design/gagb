@@ -74,31 +74,7 @@ class NightingaleChart extends React.Component<Props> {
       .padRadius(200)
       .cornerRadius(0);
   }
-  // Original Math for Reference
-  // constructor(props: *) {
-  //   super(props);
-
-  //   this.colorScale = d3.scaleSequential(d3.interpolateWarm).domain([0, 5]);
-
-  //   this.radiusScale = d3
-  //     .scaleBand()
-  //     .domain(arcMilestones)
-  //     .range([0.15 * width, 0.45 * width])
-  //     .paddingInner(0.1);
-
-  //   this.arcFn = d3
-  //     .arc()
-  //     .innerRadius(milestone => this.radiusScale(milestone))
-  //     .outerRadius(
-  //       milestone => this.radiusScale(milestone) + this.radiusScale.bandwidth()
-  //     )
-  //     .startAngle(-Math.PI / this.trackIds.length)
-  //     .endAngle(Math.PI / this.trackIds.length)
-  //     .padAngle(Math.PI / 200)
-  //     .padRadius(0.45 * width)
-  //     .cornerRadius(0);
-  // }
-
+  
   render() {
     const currentMilestoneId = this.props.milestoneByTrack[
       this.props.focusedTrackId
@@ -173,20 +149,6 @@ class NightingaleChart extends React.Component<Props> {
               </textPath>
             </text>
           </g>
-          {/* <g id="scale">
-            <path id="line" stroke="none" d="M274 270 l171 -234" />
-            <text
-              x="56"
-              style={{
-                fontWeight: "400",
-                fill: "#7d8b94",
-                opacity: ".5",
-                letterSpacing: "9"
-              }}
-            >
-              <textPath xlinkHref="#line">0 1 2 3 4 5</textPath>
-            </text>
-          </g> */}
         </svg>
         <svg id="chart">
           <defs>
