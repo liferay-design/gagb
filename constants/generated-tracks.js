@@ -4,7 +4,7 @@ export const tracks = {
         "displayName": "EXCELLENCE",
         "milestones": [
             {
-                "summary": "M1: Apply best practices towards excellence for Liferay products / projects:",
+                "summary": "Support: Apply best practices towards excellence for Liferay products / projects:",
                 "signals": [
                     "Work with established standards (coding / design foundations for the company)",
                     "Help others as you are able, giving and receiving feedback effectively",
@@ -13,7 +13,7 @@ export const tracks = {
                 ]
             },
             {
-                "summary": "M2: Use your mature knowledge to build and create, starting to help others to grow: ",
+                "summary": "Build: Use your mature knowledge to build and create, starting to help others to grow: ",
                 "signals": [
                     "Build excellence in the company using specialized skills and following the stated standards",
                     "Consistently provide high-quality work and feedback",
@@ -22,7 +22,7 @@ export const tracks = {
                 ]
             },
             {
-                "summary": "M3:  Influence people by encouraging them to deliver excellence, driving culture and processes at Liferay.",
+                "summary": "Lead: Influence people by encouraging them to deliver excellence, driving culture and processes at Liferay.",
                 "signals": [
                     "Come up with new techniques or ways to improve the excellence of products/projects and contribute to applying them",
                     "Overcome organizational or technical obstacles by pushing your ideas through to implementation",
@@ -30,7 +30,7 @@ export const tracks = {
                 ]
             },
             {
-                "summary": "M4: Achieve or generate significant business value for the company.",
+                "summary": "Strategize: Achieve or generate significant business value for the company.",
                 "signals": [
                     "Ship excellent and successful projects within the company",
                     "Share your knowledge (continuously and consistently) to the outside world (conferences, workshops, meetups, etc.). ",
@@ -38,7 +38,7 @@ export const tracks = {
                 ]
             },
             {
-                "summary": "M5:  Person that influences the industry.",
+                "summary": "Architect: Person that influences the industry.",
                 "signals": [
                     "Driving successful projects / companies in the Industry",
                     "Examples: Ferrán Adrià, Jiro Ono"
@@ -52,25 +52,25 @@ export const tracks = {
         "displayName": "COLLABORATION",
         "milestones": [
             {
-                "summary": "M1: Help others as you can, giving and receiving feedback effectively and efficiently",
+                "summary": "Support: Help others as you can, giving and receiving feedback effectively",
                 "signals": [
-                    "Attend and help conduct design critiques session",
+                    "Consistently contributing effective feedback",
                     "Help apply methods in order to increase the collaboration effectively in the team."
                 ]
             },
             {
-                "summary": "M2:  Use your mature knowledge to build and create, starting to help others to grow: ",
+                "summary": "Build: Use your mature knowledge to build and create, helping others grow ",
                 "signals": [
                     "Propose and help execute methods.",
                     "Proactively provide feedback to others.",
                     "Consistently provide high-quality work and feedback",
-                    "Help M1 grow in communication and collaboration",
+                    "Help others grow in communication and collaboration",
                     "Suggest viable ideas to grow the communication and collaboration on your team.",
                     "Share your knowledge (host workshops or blog about new techniques or processes you’ve employed)"
                 ]
             },
             {
-                "summary": "M3: How can I lead communication and collaboration across teams/products/projects?",
+                "summary": "Lead: How can I lead communication and collaboration across teams/products/projects?",
                 "signals": [
                     "Influence people/teams/products/projects by encouraging them to communicate and collaborate better through processes at Liferay.",
                     "Come up with new techniques or ways to increase the communication and collaboration effectively on teams.",
@@ -78,54 +78,51 @@ export const tracks = {
                 ]
             },
             {
-                "summary": "M4:  Achieve, internally and starting in the industry, significant communication and collaboration goals for the company.",
+                "summary": "Strategize: Achieve, internally and starting in the industry, significant communication and collaboration goals for the company.",
                 "signals": [
                     "Share your knowledge (continuously and consistently) to the outside world (conferences, workshops, meetups, etc.). ",
-                    "Track record of  successfully defining and executing improvements across organizations."
+                    "Track record of successfully defining and executing improvements across organizations."
                 ]
             },
             {
-                "summary": "M5:  Person that influences the industry.",
+                "summary": "Architect: Person that influences the industry.",
                 "signals": [
                     "Participate in architecting community/industry initiatives.",
                     "Example: Aaron Walter"
                 ]
             }
         ],
-        "description": "Collaboration is more than just working with others. It's about sharing skills, methods, and perspectives with colleagues. It requires effectively listening and thoughtfully receiving feedback from others.  Cultivate trust and build a shared understanding to solve problems together."
+        "description": "Collaboration is more than just working with others. It's about sharing skills, methods, and perspectives with colleagues. It requires effectively listening and thoughtfully receiving feedback from others. Cultivate trust and build a shared understanding to solve problems together."
     },
     "IMPACT": {
         "department": "TR",
         "displayName": "IMPACT",
         "milestones": [
             {
-                "summary": "M1: An effective team player who finds ways to serve others..",
+                "summary": "Support: An effective team player who finds ways to serve others",
                 "signals": [
-                    "Doing more than is required, and always think ahead",
-                    "Be Prepared and Self-promotional",
-                    "Thinking as a Team member, never as employee or Rock Star.",
-                    "Working together towards a common goal for the Team",
-                    "Suggests well-thought out ideas for improving processes, tools, etc "
+                    "Going above-and-beyond what is requested.",
+                    "Suggests well-thought out ideas for improving processes, tools, etc. "
                 ]
             },
             {
-                "summary": "M2: Make a tangible impact in their immediate context  ",
+                "summary": "Build: Make a tangible impact in their immediate context ",
                 "signals": [
-                    "Helps their teammates provide more of an impact in their respective roles..",
+                    "Helps their teammates provide more of an impact in their respective roles.",
                     "Proactively providing and encourage new ideas",
                     "Help the Team/Product/Project to be prepared, to be Self-Promotional, and always think ahead."
                 ]
             },
             {
-                "summary": "M3:  Designer who can Influence people/Teams/Products/Projects",
+                "summary": "Lead: Designer who can Influence people/Teams/Products/Projects",
                 "signals": [
-                    "Coming up with new techniques or ways to effectively increase the impact of  teams.",
+                    "Coming up with new techniques or ways to effectively increase the impact of teams.",
                     "Overcomes frustration with organizational limitations to drive their ideas to implementation",
                     "Has a track record of positively impacting teams. "
                 ]
             },
             {
-                "summary": "M4:  Designer who has achieved (internally and starting in the industry) significant goals for the company in terms of Products, etc.",
+                "summary": "Strategize: Designer who has achieved (internally and starting in the industry) significant goals for the company in terms of Products, etc.",
                 "signals": [
                     "Spreading his/her knowledge (Continuously & Consistently) to the outside world (conferences, workshops, meetups). ",
                     "Proven track record of defining and executing new techniques across organizations.",
@@ -133,9 +130,9 @@ export const tracks = {
                 ]
             },
             {
-                "summary": "M5:  Person that influences the industry.",
+                "summary": "Architect: Person that influences the industry.",
                 "signals": [
-                    "Architecting Community/Industry initiatives:  Aaron Walter"
+                    "Architecting Community/Industry initiatives: Aaron Walter"
                 ]
             }
         ],
@@ -146,27 +143,28 @@ export const tracks = {
         "displayName": "ADVOCACY",
         "milestones": [
             {
-                "summary": "M1: Represents Liferay well externally, interacting with customers, etc.",
+                "summary": "Support: Represents Liferay well externally, interacting with customers, etc.",
                 "signals": [
                     "Influences individuals positively",
                     "Act as Liferay Advocate",
                     "Increase the interest of possible candidates to join Liferay",
-                    "Support activity or events where promote UX or Liferay specifically",
+                    "Support activity or events where promote design or Liferay specifically",
                     "Occasional publication of blog entries, answers questions, etc"
                 ]
             },
             {
-                "summary": "M2:  Builds industry relationships and supports others’ initiatives",
+                "summary": "Build: Builds industry relationships and supports others’ initiatives",
                 "signals": [
                     "Attends community, customer and/or industry events.",
                     "Take an active part on 3rd party events, obtaining feedback actively and helping Liferay staff in promotion and recruiting tasks",
-                    "Help M1 to grow in Advocacy",
+                    "Help others grow in Advocacy",
                     "Regular publication of blog entries, answers in forums, articles in social networks and other media",
-                    "Organize local events"
+                    "Help building and organizing local events",
+                    "Speak in events"
                 ]
             },
             {
-                "summary": "M3: Leading advocacy initiatives internally and externally",
+                "summary": "Lead: Leading advocacy initiatives internally and externally",
                 "signals": [
                     "Coming up with new strategies or ways to lead Design Advocacy in teams.",
                     "Able to overcome frustration with organizational or limitations to drive their ideas to implementation",
@@ -175,7 +173,7 @@ export const tracks = {
                 ]
             },
             {
-                "summary": "M4:  Achieved significant internal goals for the company and has started to become noticed in the industry.",
+                "summary": "Strategize: Achieved significant internal goals for the company and has started to become noticed in the industry.",
                 "signals": [
                     "Shares knowledge with the outside world at conferences, workshops, meetups and the like.",
                     "Proven track record of defining and executing new techniques across organizations.",
@@ -183,7 +181,7 @@ export const tracks = {
                 ]
             },
             {
-                "summary": "M5: Influences the industry",
+                "summary": "Architect: Influences the industry",
                 "signals": [
                     "I.e. John Maeda, Daniel Burka, Jesse James Garrett"
                 ]
@@ -196,37 +194,37 @@ export const tracks = {
         "displayName": "INFLUENCE",
         "milestones": [
             {
-                "summary": "M1:  Embodies self-mastery and personal responsibility, takes initiative to serve the team.",
+                "summary": "Support: Embodies self-mastery and personal responsibility, takes initiative to serve the team.",
                 "signals": [
                     "Effectively shares responsibility",
                     "Informally mentors individuals in an ad-hoc way",
                     "Supports new hires",
                     "Conveys knowledge of the right way to do things.",
-                    "Supporting  Design Objectives and Key Results",
-                    "Executing  and leading other individuals to follow/pursue (roadmap, backlog, and Design direction)."
+                    "Supporting Design Objectives and Key Results",
+                    "Executing and leading other individuals to follow/pursue (roadmap, backlog, and Design direction)."
                 ]
             },
             {
-                "summary": "M2:  Is an example to many, mentors a few. Has some explicit responsibilities which requires ensuring other’s well-being, while delivering expected results.",
+                "summary": "Build: Is an example to many, mentors a few. Has some explicit responsibilities which requires ensuring other’s well-being, while delivering expected results.",
                 "signals": [
-                    "Leads a small team or project.",
+                    "Leads a small team or project.",
                     "Mentors people proactively, and guides people to realizations rather than providing the answer.",
-                    "Definition of the OKR´s for the designers",
-                    "Does one-to-ones with direct reports.",
-                    "Proactively building better processes for the team"
+                    "Proactively building better processes for the team.",
+                    "Designer who can create standards inside the company from its designs."
                 ]
             },
             {
-                "summary": "M3:  Assumes responsibility for the success of others.",
+                "summary": "Lead: Assumes responsibility for the success of others.",
                 "signals": [
-                    "Knows how to keep people engaged, empowered and letting them develop their skills"
+                    "Knows how to keep people engaged, empowered and letting them develop their skills.",
+                    "Spread best practices and convince others of using them."
                 ]
             },
             {
-                "summary": "M4:  Provides vision at an Organizational level. Assumes more complex responsibilities, such as leading a large or distributed team. ",
+                "summary": "Strategize: Provides vision at an Organizational level. Assumes more complex responsibilities, such as leading a large or distributed team. ",
                 "signals": [
                     "Caring for people at an organization level, helping shape the systems and influencing other departments",
-                    "Leader  who has proven success internally and, starting to become noticed in the industry.",
+                    "Leader who has proven success internally and, starting to become noticed in the industry.",
                     "No longer directly in charge of the team, your plans affect how the team ultimately performs and develops",
                     "Have bigger picture goals to manage from a strategic point of view.",
                     "Mentor the direct leader",
@@ -234,17 +232,16 @@ export const tracks = {
                     "Mentored by executive leadership to understand the expanse of the organization",
                     "Ensures that all team members are delivering and feel part of the team.",
                     "Leads a guild effectively.",
-                    "Organizes cost-effective trips that help strengthen relationships, resulting in better communication and collaboration.",
-                    "Does one-to-ones with direct reports and checks on the effectiveness of the one-to-ones they are having with theirs."
+                    "Organizes cost-effective trips that help strengthen relationships, resulting in better communication and collaboration."
                 ]
             },
             {
-                "summary": "M5:  Provides vision at an industry level, impacting all levels for many years, helping to shape the industry",
+                "summary": "Architect: Provides vision at an industry level, impacting all levels for many years, helping to shape the industry",
                 "signals": [
                     "Mentor the Strategic leader",
                     "Not only is able to manage people directly, but is able to guide some of them to be excellent managers as well.",
                     "Decisions impact all levels, internally and externally",
-                    "Focus is far-reaching and long-reaching.  It’s not just about tomorrow; it’s about years in the future",
+                    "Focus is far-reaching and long-reaching. It’s not just about tomorrow; it’s about years in the future",
                     "Successful career as proven Leader, managing multi-teams (products, countries, etc) in a diverse range of Companies."
                 ]
             }
@@ -256,7 +253,7 @@ export const tracks = {
         "displayName": "STRATEGY",
         "milestones": [
             {
-                "summary": "M1: Support",
+                "summary": "Support",
                 "signals": [
                     "Familiar with the market and company strategy. ",
                     "Reading and sharing analyst and industry reports",
@@ -264,29 +261,31 @@ export const tracks = {
                 ]
             },
             {
-                "summary": "M2: Build",
+                "summary": "Build",
                 "signals": [
-                    "Define metrics that correspond to business goals.",
                     "Can build the design strategy for one project/product"
                 ]
             },
             {
-                "summary": "M3: Lead",
+                "summary": "Lead",
                 "signals": [
                     "Relevant industry experience",
-                    "Can coordinate the design strategy for all products in the company"
+                    "Can coordinate the design strategy for all products in the company",
+                    "Produces company wide design decisions",
+                    "Find solutions to big picture challenges. Can envision design solutions taking into account the product environment, influence from other company products, and competitors."
                 ]
             },
             {
-                "summary": "M4: Strategize",
+                "summary": "Strategize",
                 "signals": [
                     "Can envision the design strategy for all products in the company",
+                    "Connects dots from existing products to envisioned products.",
                     "Discover new markets",
                     "Proto-persona: Alen Fjalic, Bobby Ghoshal"
                 ]
             },
             {
-                "summary": "M5: Architect",
+                "summary": "Architect",
                 "signals": [
                     "You are a recognized industry expert in Design Strategy.",
                     "Demonstrated success in the market.",
@@ -302,7 +301,7 @@ export const tracks = {
         "displayName": "RESEARCH",
         "milestones": [
             {
-                "summary": "M1: Support ",
+                "summary": "Support ",
                 "signals": [
                     "Maintaining Participant Pool, communicating with participants",
                     "Develop and scope clear research proposals and projects",
@@ -313,7 +312,7 @@ export const tracks = {
                 ]
             },
             {
-                "summary": "M2: Build",
+                "summary": "Build",
                 "signals": [
                     "Lead Interview debrief",
                     "Observation",
@@ -324,7 +323,7 @@ export const tracks = {
                 ]
             },
             {
-                "summary": "M3: Lead",
+                "summary": "Lead",
                 "signals": [
                     "Work with product managers (and other stakeholders) and take ownership of product direction. What do we need to know? Why is this important to us? When should we execute?",
                     "Report findings and actionable insights. Drive the direction of the product based on evidence.",
@@ -338,7 +337,7 @@ export const tracks = {
                 ]
             },
             {
-                "summary": "M4: Strategize",
+                "summary": "Strategize",
                 "signals": [
                     "Disseminating knowledge and alignment are your top priorities.",
                     "Coordinate centralizing user research in to a database",
@@ -350,7 +349,7 @@ export const tracks = {
                 ]
             },
             {
-                "summary": "M5: Architect",
+                "summary": "Architect",
                 "signals": [
                     "Bill Buxton, Erika Hall"
                 ]
@@ -363,7 +362,7 @@ export const tracks = {
         "displayName": "INTERACTION",
         "milestones": [
             {
-                "summary": "M1: Support",
+                "summary": "Support",
                 "signals": [
                     "Know and use of Design System",
                     "Able to differentiate web from mobile and the different requirements for each, including the review of platform guidelines.",
@@ -373,7 +372,7 @@ export const tracks = {
                 ]
             },
             {
-                "summary": "M2: Build",
+                "summary": "Build",
                 "signals": [
                     "An established performer with strong communication skills who proactively builds relationships",
                     "Able to contribute on shipped projects",
@@ -386,7 +385,7 @@ export const tracks = {
                 ]
             },
             {
-                "summary": "M3: Lead",
+                "summary": "Lead",
                 "signals": [
                     "A high-level performer with strong relationships and the ability to lead projects",
                     "Expertise, process, explain the rationale, cross-functional",
@@ -398,7 +397,7 @@ export const tracks = {
                 ]
             },
             {
-                "summary": "M4: Strategize",
+                "summary": "Strategize",
                 "signals": [
                     "An organized leader and performer who pushes convention and drives change",
                     "Leads the delivery of shipped products; Delivered successful work at the scope of product areas",
@@ -409,9 +408,9 @@ export const tracks = {
                 ]
             },
             {
-                "summary": "M5: Architect",
+                "summary": "Architect",
                 "signals": [
-                    "You are a recognized, industry expert in Interaction Design.",
+                    "You are a recognized industry expert in Interaction Design.",
                     "Frames and solves hard problems; has driven innovative efforts that uncovered new value with new kinds of experiences; presents company as an industry leader in design",
                     "Working with partners and stakeholders, begins making real change in how the company approaches its business; Articulates vision for the team that excites and inspires leaders and partners",
                     "Reframes company-wide \"problems\" to suggest new approaches for solving them.",
@@ -427,20 +426,19 @@ export const tracks = {
         "displayName": "VISUAL",
         "milestones": [
             {
-                "summary": "M1: Support",
+                "summary": "Support",
                 "signals": [
                     "Strong graphic design foundation: grid, typography, color theory",
                     "Have a strong visual background in print or digital media, advertising, illustration, fine arts, architecture, motion, film, etc",
                     "Becoming familiar with the limitations and requirements of designing in products and digital scenarios, knowledge and familiarity of designing within systems",
                     "Creating visual elements (motion, icons, illustration, etc) within an established system",
-                    "Creation of libraries; Icons,  Illustrations, Style guide (Visual kit).",
+                    "Creation of libraries; Icons, Illustrations, Style guide (Visual kit).",
                     "Applying the visual layer for products or projects"
                 ]
             },
             {
-                "summary": "M2: Build",
+                "summary": "Build",
                 "signals": [
-                    "Creating libraries of visual components for new and established systems",
                     "Designing the complete visual layer at an individual project or product level",
                     "Strong understanding of interaction principles (accessibility, usability) and able to thrive within those constraints",
                     "Deep understanding of brand and applying in a product",
@@ -449,20 +447,20 @@ export const tracks = {
                 ]
             },
             {
-                "summary": "M3: Lead",
+                "summary": "Lead",
                 "signals": [
                     "Coordinating visual strategy for all products",
-                    "Leading the visual direction for products across multiple teams"
+                    "Leading the visual direction for products across multiple teams"
                 ]
             },
             {
-                "summary": "M4: Strategize",
+                "summary": "Strategize",
                 "signals": [
                     "Leading visuals at an organizational level"
                 ]
             },
             {
-                "summary": "M5: Architect",
+                "summary": "Architect",
                 "signals": [
                     "You are a recognized, industry expert in Visual Design.",
                     "Design Architect with successful products in the market, creating and leading the visual standard, creating trends",
@@ -470,14 +468,14 @@ export const tracks = {
                 ]
             }
         ],
-        "description": "Visual design shapes the product experience through visual artifacts like illustrations, photography, typography, color and more to improve the usability of products."
+        "description": "Visual design shapes the product experience through artifacts like illustrations, photography, typography, color and more to improve the usability of products."
     },
     "ENGINEERING": {
         "department": "PR",
         "displayName": "ENGINEERING",
         "milestones": [
             {
-                "summary": "M1: Support",
+                "summary": "Support",
                 "signals": [
                     "Understands and has experience in the engineering lifecycle of a product from ideation to market launch.",
                     "Understands a basic language / framework (HTML/Bootstrap)",
@@ -486,7 +484,7 @@ export const tracks = {
                 ]
             },
             {
-                "summary": "M2: Build",
+                "summary": "Build",
                 "signals": [
                     "Builds html prototypes, webpages",
                     "Optimizes and helps others review their code",
@@ -496,7 +494,7 @@ export const tracks = {
                 ]
             },
             {
-                "summary": "M3: Lead",
+                "summary": "Lead",
                 "signals": [
                     "Create components",
                     "Code review (not only structure but accessibility)",
@@ -505,7 +503,7 @@ export const tracks = {
                 ]
             },
             {
-                "summary": "M4: Strategize",
+                "summary": "Strategize",
                 "signals": [
                     "Proven track record",
                     "Create APIs",
@@ -514,7 +512,7 @@ export const tracks = {
                 ]
             },
             {
-                "summary": "M5: Architect",
+                "summary": "Architect",
                 "signals": [
                     "You are a recognized, industry expert in Engineering.",
                     "Ideate Successful APIs",
@@ -524,249 +522,6 @@ export const tracks = {
                 ]
             }
         ],
-        "description": "Engineering in the context of design is the ability to understand technology, contribute to the engineering team to solve problems and create tools to improve the design lifecycle."
-    },
-    "GRAPHIC DESIGN": {
-        "department": "CO",
-        "displayName": "GRAPHIC DESIGN",
-        "milestones": [
-            {
-                "summary": "M1: Support",
-                "signals": [
-                    "Strong graphic design foundation: typography, color definition, visual hierarchy and balance",
-                    "Visual background in print or digital media, advertising, illustration, fine arts, architecture, motion, film, etc.",
-                    "Able to  create visual components (logos, icons, illustrations, motion, etc.)",
-                    "Familiar with the requirements and limitations of designing for print vs. digital",
-                    "Understand the relationship between visuals and copy in a way where each enhances the other",
-                    "Familiar with brand design systems: typography, color palettes, imagery, etc.",
-                    "Familiar with the company’s core values, personality, audiences, and goals."
-                ]
-            },
-            {
-                "summary": "M2: Build",
-                "signals": [
-                    "Create and completes design at an individual project level",
-                    "Able to work with stakeholder independently",
-                    "Strong understanding of layout design (grids/guides, spacing, readability)",
-                    "Create visual components for libraries of established systems",
-                    "Create and define visual branding systems for projects"
-                ]
-            },
-            {
-                "summary": "M3: Lead",
-                "signals": [
-                    "Coordinate design and creative efforts for projects across departments",
-                    "Art direct",
-                    "Document brand system specifications and creating resources for others (CC libraries, Dropbox folder, templates, etc.)",
-                    "Train others on proper execution of branding system",
-                    "Strengthen communication and project management skills"
-                ]
-            },
-            {
-                "summary": "M4: Strategize",
-                "signals": [
-                    "Lead design and branding at an organizational level"
-                ]
-            },
-            {
-                "summary": "M5: Architect",
-                "signals": [
-                    "Well-known in the industry with successful designs and branding systems in the market, creating and leading the visual standard, creating trends"
-                ]
-            }
-        ],
-        "description": "Graphic design combines visual artifacts like illustrations, photography, typography to communicate and problem solve."
-    },
-    "BRANDING": {
-        "department": "CO",
-        "displayName": "BRANDING",
-        "milestones": [
-            {
-                "summary": "M1: Support",
-                "signals": [
-                    "Familiar with the market and company brand",
-                    "Familiar with the company’s core values, personality, audiences, and goals.",
-                    "Research industry competitors and best practices",
-                    "Contribute to the consistency and protection of established brand guidlines"
-                ]
-            },
-            {
-                "summary": "M2: Build",
-                "signals": [
-                    "Grow the visual brand by adapting and evolving it to the needs and business goals of the company",
-                    "Apply branding systems to projects at an individual project level",
-                    "Able to work with stakeholders independently",
-                    "Help define branding systems for projects, which include messaging, tone, and other non-visuals"
-                ]
-            },
-            {
-                "summary": "M3: Lead",
-                "signals": [
-                    "Relevant industry experience",
-                    "Can coordinate the branding strategy for all products in the company"
-                ]
-            },
-            {
-                "summary": "M4: Strategize",
-                "signals": [
-                    "Can envision the branding strategy for the company and its products"
-                ]
-            },
-            {
-                "summary": "M5: Architect",
-                "signals": [
-                    "Well-known in the industry with successful branding systems and campaigns in the market, creating and leading the branding  standard, creating trends"
-                ]
-            }
-        ]
-    },
-    "ILLUSTRATION": {
-        "department": "CO",
-        "displayName": "ILLUSTRATION",
-        "milestones": [
-            {
-                "summary": "M1: Support",
-                "signals": [
-                    "Knowledge of design principles: color definition, visual hierarchy and composition",
-                    "Visual background in print or digital media, illustration, fine arts, architecture, etc.",
-                    "Familiar with the requirements and limitations of designing for print vs. digital",
-                    "Understand how to illustrate a narrative",
-                    "Understand the importance of sketching"
-                ]
-            },
-            {
-                "summary": "M2: Build",
-                "signals": [
-                    "Create vectorized or high-res illustrations in a neat and methodic way to be used in print and digital mediums, in both small and large formats",
-                    "Concept and complete illustrations at an individual project level",
-                    "Able to work with stakeholder independently",
-                    "Contribute to illustration libraries within established systems"
-                ]
-            },
-            {
-                "summary": "M3: Lead",
-                "signals": [
-                    "Coordinate illustrative efforts for projects across departments",
-                    "Create/maintain style guides and resources for other designers (CC libraries, illustration assets kit, etc.)",
-                    "Art direct",
-                    "Train others on best practices and methods"
-                ]
-            },
-            {
-                "summary": "M4: Strategize",
-                "signals": [
-                    "Lead illustration efforts at an organizational level"
-                ]
-            },
-            {
-                "summary": "M5: Architect",
-                "signals": [
-                    "Well-known in the industry with successful illustrations in the market, creating and leading the visual standard, creating trends"
-                ]
-            }
-        ]
-    },
-    "PHOTOGRAPHY": {
-        "department": "CO",
-        "displayName": "PHOTOGRAPHY",
-        "milestones": [
-            {
-                "summary": "M1: Support",
-                "signals": [
-                    "Strong photography foundation: composition, tonal contrast, colors",
-                    "Understand how to intentionally frame a shot with a focal point",
-                    "Basic knowledge of equipment: camera brands, lenses, shutter speed, aperture",
-                    "Experience in portrait (posed) and documentary (candid) shoots",
-                    "Experience with natural and artificial lighting, a plus",
-                    "Post-processing: basic color correction and exposure settings, fixing distortions or blemishes, cropping/framing, stylistic color toning, various export settings",
-                    "Familiar with the requirements and limitations of different mediums"
-                ]
-            },
-            {
-                "summary": "M2: Build",
-                "signals": [
-                    "Regularly contribute photographs to new and established libraries/albums",
-                    "Define new styles and guides, and evolve current ones",
-                    "Manage stock photo library",
-                    "Curate photos for an album/project from a camera photo dump",
-                    "Comfortable art directing subjects of photoshoots",
-                    "Intimate knowledge of good vs. bad lighting conditions",
-                    "A sharp eye that identifies and adjusts distracting details, unflattering poses, clutter, etc. amidst shooting/directing",
-                    "Photograph and post-process at an individual project level"
-                ]
-            },
-            {
-                "summary": "M3: Lead",
-                "signals": [
-                    "Take a stronger directorial role in photoshoots, which includes conceptualizing, art direction, and working with stakeholders",
-                    "Coordinate efforts for projects involving multiple departments",
-                    "Strengthen communication and project management skills",
-                    "Train others, and oversee them in, assisting in various phases of production",
-                    "Expertise in lighting and how to manipulate light (natural, artificial) in a variety of settings",
-                    "Expertise in portraiture",
-                    "Take lead on setting up ad-hoc photography teams (shooting schedules, equipment, communication) for large corporate events/conferences"
-                ]
-            },
-            {
-                "summary": "M4: Strategize",
-                "signals": [
-                    "Lead photography efforts and at an organizational level",
-                    "Initiate new photography projects and identifying existing ones for improvement"
-                ]
-            },
-            {
-                "summary": "M5: Architect",
-                "signals": [
-                    "Well-known in the industry and stock photo community with professional-grade photographs in the market, creating and leading the visual standard"
-                ]
-            }
-        ],
-        "description": "Photography includes planning and executing photo shoots, post-processing, and photo library curation. Photos may be used in print and digitally, across various mediums."
-    },
-    "VIDEOGRAPHY": {
-        "department": "CO",
-        "displayName": "VIDEOGRAPHY",
-        "milestones": [
-            {
-                "summary": "M1: Support",
-                "signals": [
-                    "Strong videography foundation: storyboarding, lighting, audio, camera work, editing",
-                    "Strong visual background fine arts, photography, motion, film, etc.",
-                    "Familiar with creating basic animated components (lower thirds, intro/outro, floating text, etc.)",
-                    "Familiar with the requirements and limitations of different viewing platforms"
-                ]
-            },
-            {
-                "summary": "M2: Build",
-                "signals": [
-                    "Storyboard (or equivalent) concepts to convey narration, transitions, tone, mood, etc.",
-                    "Complete entire production at an individual project level (Location scout, set up, film, edit, etc.)",
-                    "Create libraries of visual and audio components for new and established systems",
-                    "Define new styles and guides, and evolve current ones"
-                ]
-            },
-            {
-                "summary": "M3: Lead",
-                "signals": [
-                    "Take a stronger directorial role in the production of videos, which includes driving art direction and working with stakeholders on messaging",
-                    "Train others, and oversee them in, assisting in various phases of production",
-                    "Take lead on setting up ad-hoc videography teams (shooting schedules, equipment, communication) for large corporate events/conferences"
-                ]
-            },
-            {
-                "summary": "M4: Strategize",
-                "signals": [
-                    "Lead video efforts and at an organizational level",
-                    "Initiate new video projects and identifying existing ones for improvement"
-                ]
-            },
-            {
-                "summary": "M5: Architect",
-                "signals": [
-                    "Well-known in the industry with successful and video campaigns in the market, creating and leading the visual standard"
-                ]
-            }
-        ],
-        "description": "Videography includes video production and pre/post production. Videos may be viewed online or at an event."
+        "description": "Engineering in the context of design is the ability to understand and contribute to the various technologies and frameworks that are used in the designer’s context. "
     }
 }

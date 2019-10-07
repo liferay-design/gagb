@@ -296,7 +296,7 @@ class NightingaleChart extends React.Component<Props> {
             })}
           </g>
           <g style={{ transform: 'translate(44%,0%)' }}>
-            <Logo width="4rem" color={colors['primary']} />
+            <Logo width="64px" color={colors['primary']} />
           </g>
         </svg>
       </figure>
