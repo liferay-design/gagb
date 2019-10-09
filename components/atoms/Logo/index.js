@@ -15,8 +15,8 @@ const Logo = ( {color, width} ) => (
     </mask>
     <g mask="url(#a)">
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M800 0H0v800h800V0zM640 400c0 132.548-107.452 240-240 240V160c132.548 0 240 107.452 240 240z"
         fill={color}
       />
