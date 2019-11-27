@@ -253,7 +253,7 @@ export const tracks = {
         "displayName": "STRATEGY",
         "milestones": [
             {
-                "summary": "M1: Support",
+                "summary": "Support",
                 "signals": [
                     "Familiar with the market and company strategy.",
                     "Reads and shares articles on best practices, industry activity",
@@ -261,7 +261,7 @@ export const tracks = {
                 ]
             },
             {
-                "summary": "M2: Build",
+                "summary": "Build",
                 "signals": [
                     "Understands business goals for projects/campaigns and builds the design/creative strategy accordingly",
                     "Defines level of effort + time and coordinates resources",
@@ -269,7 +269,7 @@ export const tracks = {
                 ]
             },
             {
-                "summary": "M3: Lead",
+                "summary": "Lead",
                 "signals": [
                     "Relevant industry experience",
                     "Coordinates design/creative efforts and process for projects across the company",
@@ -278,14 +278,14 @@ export const tracks = {
                 ]
             },
             {
-                "summary": "M4: Strategize",
+                "summary": "Strategize",
                 "signals": [
                     "Can envision the design/creative strategy for global campaigns in the company",
                     "Connects dots from existing project/campaigns to envisioned ones"
                 ]
             },
             {
-                "summary": "M5: Architect",
+                "summary": "Architect",
                 "signals": [
                     "A recognized industry expert in Design Strategy",
                     "Demonstrated success in the market",
@@ -300,7 +300,7 @@ export const tracks = {
         "displayName": "ENVIRONMENTAL",
         "milestones": [
             {
-                "summary": "M1: Support",
+                "summary": "Support",
                 "signals": [
                     "Understands designing within print specifications",
                     "Learns best practices regarding accessibility, visibility, industry activity",
@@ -308,7 +308,7 @@ export const tracks = {
                 ]
             },
             {
-                "summary": "M2: Build",
+                "summary": "Build",
                 "signals": [
                     "Understands business goals for projects, designing accordingly",
                     "Able to work with stakeholders and vendors independently",
@@ -318,7 +318,7 @@ export const tracks = {
                 ]
             },
             {
-                "summary": "M3: Lead",
+                "summary": "Lead",
                 "signals": [
                     "Strong communication and the ability to lead projects",
                     "Manages the design and process for multi-faceted projects",
@@ -327,7 +327,7 @@ export const tracks = {
                 ]
             },
             {
-                "summary": "M4: Strategize",
+                "summary": "Strategize",
                 "signals": [
                     "An organized leader and performer who pushes convention and drives change",
                     "Identifies problem areas and streamlines process, facilitating efforts across teams",
@@ -335,7 +335,7 @@ export const tracks = {
                 ]
             },
             {
-                "summary": "M5: Architect",
+                "summary": "Architect",
                 "signals": [
                     "A recognized industry expert in Environmental Design",
                     "Has driven innovative efforts that uncover new value with new kinds of experiences",
@@ -350,7 +350,7 @@ export const tracks = {
         "displayName": "PRODUCTION",
         "milestones": [
             {
-                "summary": "M1: Support",
+                "summary": "Support",
                 "signals": [
                     "Understands the difference between designing within print and digital specifications",
                     "Strong graphic design foundation: composition, visual hierarchy, typography, color theory",
@@ -360,7 +360,7 @@ export const tracks = {
                 ]
             },
             {
-                "summary": "M2: Build",
+                "summary": "Build",
                 "signals": [
                     "Is meticulous, has a keen eye for detail and technical know-how",
                     "Reviews final copy, layouts, and content in print and digital form",
@@ -370,7 +370,7 @@ export const tracks = {
                 ]
             },
             {
-                "summary": "M3: Lead",
+                "summary": "Lead",
                 "signals": [
                     "Relevant industry experience",
                     "Has extensive knowledge of pre-press and printing standards through a variety of methods",
@@ -380,7 +380,7 @@ export const tracks = {
                 ]
             },
             {
-                "summary": "M4: Strategize",
+                "summary": "Strategize",
                 "signals": [
                     "Proven track record",
                     "Creates standards regarding all projects, so process is similar across the board",
@@ -389,7 +389,7 @@ export const tracks = {
                 ]
             },
             {
-                "summary": "M5: Architect",
+                "summary": "Architect",
                 "signals": [
                     "Expertise in the tips and tools used in graphic design",
                     "Well-known in the industry",
@@ -404,7 +404,7 @@ export const tracks = {
         "displayName": "BRAND IDENTITY",
         "milestones": [
             {
-                "summary": "M1: Support",
+                "summary": "Support",
                 "signals": [
                     "Understands the difference, and relationship, between brand and brand identity",
                     "Familiar with the market and company strategy",
@@ -418,7 +418,7 @@ export const tracks = {
                 ]
             },
             {
-                "summary": "M2: Build",
+                "summary": "Build",
                 "signals": [
                     "Designs at an individual level, and is able to work with stakeholders independently",
                     "Deep understanding of the company’s brand and applying in a project",
@@ -428,7 +428,7 @@ export const tracks = {
                 ]
             },
             {
-                "summary": "M3: Lead",
+                "summary": "Lead",
                 "signals": [
                     "Coordinates brand identity for campaigns",
                     "Leads the visual and creative direction for campaigns in cross-functional teams",
@@ -437,7 +437,7 @@ export const tracks = {
                 ]
             },
             {
-                "summary": "M4: Strategize",
+                "summary": "Strategize",
                 "signals": [
                     "Leads brand identity efforts at an organizational level",
                     "Communicates to the company, and advocates, the value of consistency in branding",
@@ -445,7 +445,7 @@ export const tracks = {
                 ]
             },
             {
-                "summary": "M5: Architect",
+                "summary": "Architect",
                 "signals": [
                     "A recognized industry expert in Brand Identity",
                     "Demonstrated success in the market, creating and leading the visual standard, creating trends"
@@ -459,7 +459,7 @@ export const tracks = {
         "displayName": "MEDIA",
         "milestones": [
             {
-                "summary": "M1: Support",
+                "summary": "Support",
                 "signals": [
                     "A supporting-level player who is honing their craft and working to understand its use in the organizational context",
                     "Understands how to illustrate a narrative through their craft",
@@ -469,7 +469,7 @@ export const tracks = {
                 ]
             },
             {
-                "summary": "M2: Build",
+                "summary": "Build",
                 "signals": [
                     "Able to use craft(s) to contribute to projects/campaigns",
                     "Able to expand design systems to include different media",
@@ -479,7 +479,7 @@ export const tracks = {
                 ]
             },
             {
-                "summary": "M3: Lead",
+                "summary": "Lead",
                 "signals": [
                     "A high-level performer with ability to lead projects",
                     "Trains others to strengthen same skill(s)",
@@ -490,7 +490,7 @@ export const tracks = {
                 ]
             },
             {
-                "summary": "M4: Strategize",
+                "summary": "Strategize",
                 "signals": [
                     "An organized leader and performer who pushes convention and drives change",
                     "Leads and delivers successful work, meeting business goals",
@@ -498,7 +498,7 @@ export const tracks = {
                 ]
             },
             {
-                "summary": "M5: Architect",
+                "summary": "Architect",
                 "signals": [
                     "A recognized industry expert in your craft",
                     "Demonstrated success in the market, creating and leading the visual standard, creating trends"
