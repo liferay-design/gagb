@@ -207,7 +207,7 @@ class PathTool extends React.Component<Props, PathToolAppState> {
         <div style={{ display: 'flex', width: '64rem', margin: '0 auto 30vh' }}>
           <div style={{ display: 'table', position: 'sticky', top: '1rem' }}>
             <NightingaleChart
-              department="PR"
+              department="CO"
               milestoneByTrack={this.state.milestoneByTrack}
               focusedTrackId={this.state.focusedTrackId}
               handleTrackMilestoneChangeFn={(track, milestone) =>

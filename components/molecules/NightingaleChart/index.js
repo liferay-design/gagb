@@ -145,7 +145,7 @@ class NightingaleChart extends React.Component<Props> {
                 style={{ fill: `${colors[['primary']]}` }}
                 xlinkHref="#skillPath"
               >
-                Product Design
+                Communication Design
               </textPath>
             </text>
           </g>

@@ -10,21 +10,21 @@ export const titles = [
         maxPoints: 7 
     },
     { 
-        label: "Associate Product Designer", 
+        label: "Associate Communication Designer", 
         minPoints: 8, 
         maxPoints: 15 
     },
     { 
-        label: "Product Designer", 
+        label: "Communication Designer", 
         minPoints: 16, 
         maxPoints: 31 
     },
     { 
-        label: "Senior Product Designer", 
+        label: "Senior Communication Designer", 
         minPoints: 32, 
         maxPoints: 95 
     },
     { 
-        label: "Principal Product Designer", 
+        label: "Principal Communication Designer", 
         minPoints: 96 }
 ];

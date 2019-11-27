@@ -249,279 +249,262 @@ export const tracks = {
         "description": "Leadership skills are required to guide individuals, teams, or an entire organization to reach a shared goal. As the company grows and the number of people and teams increases, it’s important that some individuals assume additional responsibilities serving people and teams effectively."
     },
     "STRATEGY": {
-        "department": "PR",
+        "department": "CO",
         "displayName": "STRATEGY",
         "milestones": [
             {
-                "summary": "Support",
+                "summary": "M1: Support",
                 "signals": [
-                    "Familiar with the market and company strategy. ",
-                    "Reading and sharing analyst and industry reports",
-                    "Can support the design strategy for one project/product"
+                    "Familiar with the market and company strategy.",
+                    "Reads and shares articles on best practices, industry activity",
+                    "Supports the design strategy for projects/campaigns"
                 ]
             },
             {
-                "summary": "Build",
+                "summary": "M2: Build",
                 "signals": [
-                    "Can build the design strategy for one project/product"
+                    "Understands business goals for projects/campaigns and builds the design/creative strategy accordingly",
+                    "Defines level of effort + time and coordinates resources",
+                    "Able to work with stakeholders independently"
                 ]
             },
             {
-                "summary": "Lead",
+                "summary": "M3: Lead",
                 "signals": [
                     "Relevant industry experience",
-                    "Can coordinate the design strategy for all products in the company",
-                    "Produces company wide design decisions",
-                    "Find solutions to big picture challenges. Can envision design solutions taking into account the product environment, influence from other company products, and competitors."
+                    "Coordinates design/creative efforts and process for projects across the company",
+                    "Produces company-wide design/creative and process decisions",
+                    "Finds solutions to big-picture challenges. Can envision design solutions, taking into account the medium, audience, influence from other campaigns, and competitors."
                 ]
             },
             {
-                "summary": "Strategize",
+                "summary": "M4: Strategize",
                 "signals": [
-                    "Can envision the design strategy for all products in the company",
-                    "Connects dots from existing products to envisioned products.",
-                    "Discover new markets",
-                    "Proto-persona: Alen Fjalic, Bobby Ghoshal"
+                    "Can envision the design/creative strategy for global campaigns in the company",
+                    "Connects dots from existing project/campaigns to envisioned ones"
                 ]
             },
             {
-                "summary": "Architect",
+                "summary": "M5: Architect",
                 "signals": [
-                    "You are a recognized industry expert in Design Strategy.",
-                    "Demonstrated success in the market.",
-                    "Generating significant business value for the company in terms of new verticals, new sources of revenue, etc.",
-                    "Designer-founders: Tom Kelly, Clark Valberg, Des Traynor, Brian Chesky"
+                    "A recognized industry expert in Design Strategy",
+                    "Demonstrated success in the market",
+                    "Generates significant business value for the company, in terms of new verticals, new sources or revenue, etc."
                 ]
             }
         ],
-        "description": "Business in the context of design is the ability to understand the market, contribute to business goals to solve problems and create tools to improve the design lifecycle."
+        "description": ""
     },
-    "RESEARCH": {
-        "department": "PR",
-        "displayName": "RESEARCH",
+    "ENVIRONMENTAL": {
+        "department": "CO",
+        "displayName": "ENVIRONMENTAL",
         "milestones": [
             {
-                "summary": "Support ",
+                "summary": "M1: Support",
                 "signals": [
-                    "Maintaining Participant Pool, communicating with participants",
-                    "Develop and scope clear research proposals and projects",
-                    "Basic research tasks like user testing, recruiting, simple reporting, and interview note-taking",
-                    "Quantitative data collection and analysis, contributing to research database",
-                    "Synthesizing findings in various artifacts such as personas, journey maps, mental models, usability reports",
-                    "Starts with prepackaged questions or predefined methods and executes on defined units of work."
+                    "Understands designing within print specifications",
+                    "Learns best practices regarding accessibility, visibility, industry activity",
+                    "Supports the design for projects"
                 ]
             },
             {
-                "summary": "Build",
+                "summary": "M2: Build",
                 "signals": [
-                    "Lead Interview debrief",
-                    "Observation",
-                    "Quantitative data collection and analysis (use of mathematical models)",
-                    "Executing the prescribed research methods to grasp the outcomes each method yields with minimal supervision. Objectively report and share their evidence based recommendations.",
-                    "Workshop facilitation",
-                    "Sell to internal stakeholders"
+                    "Understands business goals for projects, designing accordingly",
+                    "Able to work with stakeholders and vendors independently",
+                    "Can propose solutions to problems, and offer improvements to copy and design",
+                    "Able to propose and build designs within marketing budgets",
+                    "Able to design within vendor requirements"
                 ]
             },
             {
-                "summary": "Lead",
+                "summary": "M3: Lead",
                 "signals": [
-                    "Work with product managers (and other stakeholders) and take ownership of product direction. What do we need to know? Why is this important to us? When should we execute?",
-                    "Report findings and actionable insights. Drive the direction of the product based on evidence.",
-                    "Data collection (Quantitative and Qualitative)",
-                    "Complex reporting",
-                    "Workshop facilitation to align understanding of customer data",
-                    "Synthesizing findings in various artifacts such as personas, journey maps, mental models, usability reports",
-                    "Present research insights in a digestible story at different levels of depth depending on the audience",
-                    "Framing research findings in greater context, leverage storytelling to create buy-in",
-                    "Foster adoption of research db "
+                    "Strong communication and the ability to lead projects",
+                    "Manages the design and process for multi-faceted projects",
+                    "Leads discussions and proposals in cross-functional teams",
+                    "Contributes to cross-functional planning and post-mortems"
                 ]
             },
             {
-                "summary": "Strategize",
-                "signals": [
-                    "Disseminating knowledge and alignment are your top priorities.",
-                    "Coordinate centralizing user research in to a database",
-                    "Wide audience communication",
-                    "Foster adoption of research db",
-                    "Product roadmap planning",
-                    "Program Design",
-                    "Laura Kalbag"
-                ]
-            },
-            {
-                "summary": "Architect",
-                "signals": [
-                    "Bill Buxton, Erika Hall"
-                ]
-            }
-        ],
-        "description": "User research focuses on understanding user behaviors, needs, and motivations through observation techniques, task analysis, and other feedback methodologies. "
-    },
-    "INTERACTION": {
-        "department": "PR",
-        "displayName": "INTERACTION",
-        "milestones": [
-            {
-                "summary": "Support",
-                "signals": [
-                    "Know and use of Design System",
-                    "Able to differentiate web from mobile and the different requirements for each, including the review of platform guidelines.",
-                    "Knows what accessibility is about but hasn’t yet started to care about it.",
-                    "Explore best practices for common design problems; solutions are solid, though not novel",
-                    "Solve specific function-level problems (e.g., \"add to shopping cart\")"
-                ]
-            },
-            {
-                "summary": "Build",
-                "signals": [
-                    "An established performer with strong communication skills who proactively builds relationships",
-                    "Able to contribute on shipped projects",
-                    "Able to contribute to Design System",
-                    "Ability to analyse and solve accessibility problems.",
-                    "Emerging recognition that it's not all about design, but how design contributes to a broader goal; recognizes business goals and technical constraints",
-                    "Strong and capable engagement in standard design processes",
-                    "Confident in applying best practices to common design problems; solutions are solid, not novel",
-                    "Given specific product capabilities that need to be solved (e.g., Checkout process)"
-                ]
-            },
-            {
-                "summary": "Lead",
-                "signals": [
-                    "A high-level performer with strong relationships and the ability to lead projects",
-                    "Expertise, process, explain the rationale, cross-functional",
-                    "Contributed to multiple shipped products",
-                    "Develops the process/approach for tackling a design problem, using known methods; anticipates problems",
-                    "Begins going beyond best practices",
-                    "Clarifies success metrics and ties efforts toward delivering business value",
-                    "Leads the solution of a product area; connects that to broader product vision (e.g, product page and purchase experience)"
-                ]
-            },
-            {
-                "summary": "Strategize",
+                "summary": "M4: Strategize",
                 "signals": [
                     "An organized leader and performer who pushes convention and drives change",
-                    "Leads the delivery of shipped products; Delivered successful work at the scope of product areas",
-                    "Develops the process/approach for tackling a design problem, using known methods; anticipates problems; develops facilitation skills to engage cross-functional teams",
-                    "Begins to realize the power of problem-framing, establishing new starting points that lead to new kinds of solutions",
-                    "Leading the solution of undefined problem spaces (e.g. “How do people complete a transaction?”)",
-                    "Uses understanding of impact and success metrics to focus and re-prioritize their and their team's efforts; Emerging understanding of broader organizational context and goals; "
+                    "Identifies problem areas and streamlines process, facilitating efforts across teams",
+                    "Understands the psychology of how people interact with environments"
                 ]
             },
             {
-                "summary": "Architect",
+                "summary": "M5: Architect",
                 "signals": [
-                    "You are a recognized industry expert in Interaction Design.",
-                    "Frames and solves hard problems; has driven innovative efforts that uncovered new value with new kinds of experiences; presents company as an industry leader in design",
-                    "Working with partners and stakeholders, begins making real change in how the company approaches its business; Articulates vision for the team that excites and inspires leaders and partners",
-                    "Reframes company-wide \"problems\" to suggest new approaches for solving them.",
-                    "The Big Picture of an entire company's offerings, and how they integrate and coordinate",
-                    "Luke Wroblewski, Jared Spool"
+                    "A recognized industry expert in Environmental Design",
+                    "Has driven innovative efforts that uncover new value with new kinds of experiences",
+                    "Successful designs in the market, creating and leading the standard, creating trends"
                 ]
             }
         ],
-        "description": "Interaction Design combines Usability, Information Architecture, and other disciplines to deliver easy to use products."
+        "description": "Design that exists in the physical world, taking into consideration interaction and behavior, managing foot traffic and floorspace, tangible obstacles and limitations. Areas of influence include entire events, individual booth setups, and office environments."
     },
-    "VISUAL": {
-        "department": "PR",
-        "displayName": "VISUAL",
+    "PRODUCTION": {
+        "department": "CO",
+        "displayName": "PRODUCTION",
         "milestones": [
             {
-                "summary": "Support",
+                "summary": "M1: Support",
                 "signals": [
-                    "Strong graphic design foundation: grid, typography, color theory",
-                    "Have a strong visual background in print or digital media, advertising, illustration, fine arts, architecture, motion, film, etc",
-                    "Becoming familiar with the limitations and requirements of designing in products and digital scenarios, knowledge and familiarity of designing within systems",
-                    "Creating visual elements (motion, icons, illustration, etc) within an established system",
-                    "Creation of libraries; Icons, Illustrations, Style guide (Visual kit).",
-                    "Applying the visual layer for products or projects"
+                    "Understands the difference between designing within print and digital specifications",
+                    "Strong graphic design foundation: composition, visual hierarchy, typography, color theory",
+                    "Able to create visual components within design systems(logos, icons, illustrations, motion, etc.)",
+                    "Supports the artwork for projects",
+                    "Collects, processes, and uploads files"
                 ]
             },
             {
-                "summary": "Build",
+                "summary": "M2: Build",
                 "signals": [
-                    "Designing the complete visual layer at an individual project or product level",
-                    "Strong understanding of interaction principles (accessibility, usability) and able to thrive within those constraints",
-                    "Deep understanding of brand and applying in a product",
-                    "Able to synthesize business strategy with a visual direction",
-                    "Creating and defining new brands for products or projects"
+                    "Is meticulous, has a keen eye for detail and technical know-how",
+                    "Reviews final copy, layouts, and content in print and digital form",
+                    "Is accurate, fast, patient, and a good listener, as responsibilities often complete the last step in a rushed process",
+                    "Troubleshoots problems that may arise with a project and comes up with solutions to make sure things happen as planned",
+                    "Collaborates with other designers and works with vendors to format artwork and execute pre-press production"
                 ]
             },
             {
-                "summary": "Lead",
+                "summary": "M3: Lead",
                 "signals": [
-                    "Coordinating visual strategy for all products",
-                    "Leading the visual direction for products across multiple teams"
+                    "Relevant industry experience",
+                    "Has extensive knowledge of pre-press and printing standards through a variety of methods",
+                    "Is an excellent communicator and collaborator in cross-functional teams",
+                    "Creates art standards/guides and templates for consistency from project to project",
+                    "Makes sure all designers working on the projects adhere to the same process and file organization"
                 ]
             },
             {
-                "summary": "Strategize",
-                "signals": [
-                    "Leading visuals at an organizational level"
-                ]
-            },
-            {
-                "summary": "Architect",
-                "signals": [
-                    "You are a recognized, industry expert in Visual Design.",
-                    "Design Architect with successful products in the market, creating and leading the visual standard, creating trends",
-                    "Tobias Van Schneider, Mike (Creative Mints)"
-                ]
-            }
-        ],
-        "description": "Visual design shapes the product experience through artifacts like illustrations, photography, typography, color and more to improve the usability of products."
-    },
-    "ENGINEERING": {
-        "department": "PR",
-        "displayName": "ENGINEERING",
-        "milestones": [
-            {
-                "summary": "Support",
-                "signals": [
-                    "Understands and has experience in the engineering lifecycle of a product from ideation to market launch.",
-                    "Understands a basic language / framework (HTML/Bootstrap)",
-                    "Knows design tokens",
-                    "Understands accessibility related things to implementation"
-                ]
-            },
-            {
-                "summary": "Build",
-                "signals": [
-                    "Builds html prototypes, webpages",
-                    "Optimizes and helps others review their code",
-                    "Understands more complex languages / frameworks (Python, React)",
-                    "Uses components and APIs",
-                    "Develops with accessibility in mind"
-                ]
-            },
-            {
-                "summary": "Lead",
-                "signals": [
-                    "Create components",
-                    "Code review (not only structure but accessibility)",
-                    "Develops standalone sites and apps",
-                    "Teaches frameworks or advanced languages (angular/html/etc) to others"
-                ]
-            },
-            {
-                "summary": "Strategize",
+                "summary": "M4: Strategize",
                 "signals": [
                     "Proven track record",
-                    "Create APIs",
-                    "Platform & technologies",
-                    "Create design systems"
+                    "Creates standards regarding all projects, so process is similar across the board",
+                    "Has knowledge of web development languages, like Javascript and HTML, and expertise with digital interfaces",
+                    "Provides non-designers with tools/guides to self serve"
                 ]
             },
             {
-                "summary": "Architect",
+                "summary": "M5: Architect",
                 "signals": [
-                    "You are a recognized, industry expert in Engineering.",
-                    "Ideate Successful APIs",
-                    "Have successful, robust design systems used in the market",
-                    "Industry leader at the intersection of Design and Technology",
-                    "Colm Tuite, Brent Jackson, Jon Gold"
+                    "Expertise in the tips and tools used in graphic design",
+                    "Well-known in the industry",
+                    "Improves and redefines the way the company requests and processes artwork"
                 ]
             }
         ],
-        "description": "Engineering in the context of design is the ability to understand and contribute to the various technologies and frameworks that are used in the designer’s context. "
+        "description": "The actions and logistics of turning concepts into finished products happen here. A combination of technical and creative skills, and a variety of design programs are utilized to ensure deliverables are produced on time and executed accordingly."
+    },
+    "BRAND IDENTITY": {
+        "department": "CO",
+        "displayName": "BRAND IDENTITY",
+        "milestones": [
+            {
+                "summary": "M1: Support",
+                "signals": [
+                    "Understands the difference, and relationship, between brand and brand identity",
+                    "Familiar with the market and company strategy",
+                    "Reads and shares articles on best practices, industry activity",
+                    "Strong graphic design foundation: composition, visual hierarchy, typography, color theory",
+                    "Strong visual background in print or digital media, advertising,  illustration, fine arts, architecture, motion, film, etc.",
+                    "Creates visual elements within an established system",
+                    "Familiar with the requirements and limitations of designing for print vs. digital",
+                    "Understands how to illustrate a narrative",
+                    "Supports the design for projects/campaigns"
+                ]
+            },
+            {
+                "summary": "M2: Build",
+                "signals": [
+                    "Designs at an individual level, and is able to work with stakeholders independently",
+                    "Deep understanding of the company’s brand and applying in a project",
+                    "Able to synthesize business strategy with a visual direction",
+                    "Contributes to asset libraries within established systems",
+                    "Creating and defining new branding identities for projects"
+                ]
+            },
+            {
+                "summary": "M3: Lead",
+                "signals": [
+                    "Coordinates brand identity for campaigns",
+                    "Leads the visual and creative direction for campaigns in cross-functional teams",
+                    "Creates and maintains style guides and resources",
+                    "Trains others on best practices and methods"
+                ]
+            },
+            {
+                "summary": "M4: Strategize",
+                "signals": [
+                    "Leads brand identity efforts at an organizational level",
+                    "Communicates to the company, and advocates, the value of consistency in branding",
+                    "Creates tools/methods to empower non-designers to do work that adheres to the company’s brand identity"
+                ]
+            },
+            {
+                "summary": "M5: Architect",
+                "signals": [
+                    "A recognized industry expert in Brand Identity",
+                    "Demonstrated success in the market, creating and leading the visual standard, creating trends"
+                ]
+            }
+        ],
+        "description": "Brand Identity is the visual aspects that form part of the overall brand. Creating and maintaining this visual representation effectively results in people associating it with a high level of credibility and quality."
+    },
+    "MEDIA": {
+        "department": "CO",
+        "displayName": "MEDIA",
+        "milestones": [
+            {
+                "summary": "M1: Support",
+                "signals": [
+                    "A supporting-level player who is honing their craft and working to understand its use in the organizational context",
+                    "Understands how to illustrate a narrative through their craft",
+                    "Familiar with company and campaign strategies",
+                    "Understands and uses the established design system",
+                    "Reads and shares articles on best practices, industry activity/trends"
+                ]
+            },
+            {
+                "summary": "M2: Build",
+                "signals": [
+                    "Able to use craft(s) to contribute to projects/campaigns",
+                    "Able to expand design systems to include different media",
+                    "Recognizes business goals and technical constraints",
+                    "Identifies places where specific media can be effectively used to help meet business goals",
+                    "Able to work with stakeholders independently"
+                ]
+            },
+            {
+                "summary": "M3: Lead",
+                "signals": [
+                    "A high-level performer with ability to lead projects",
+                    "Trains others to strengthen same skill(s)",
+                    "Contributes to multiple projects",
+                    "Expertise on the skill and process informs decisions on whether to contract out or keep it inhouse",
+                    "Trains others to strengthen same skill(s)",
+                    "Develops the process/approach for executing specific media in cross-functional teams"
+                ]
+            },
+            {
+                "summary": "M4: Strategize",
+                "signals": [
+                    "An organized leader and performer who pushes convention and drives change",
+                    "Leads and delivers successful work, meeting business goals",
+                    "Initiates ideas and projects in order to enhance public engagement with the company’s communication efforts"
+                ]
+            },
+            {
+                "summary": "M5: Architect",
+                "signals": [
+                    "A recognized industry expert in your craft",
+                    "Demonstrated success in the market, creating and leading the visual standard, creating trends"
+                ]
+            }
+        ],
+        "description": "Media in the context of design is the understanding and use of various specialized skills and technologies to support the creative vision. Such skills include illustration, photography, videography, motion graphics, 3D rendering, and fine arts, among others."
     }
 }

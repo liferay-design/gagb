@@ -15,12 +15,12 @@ const TOKEN_PATH = `${process.cwd()}/token.json`
 
 /* Program Init */
 // TODO: Add Communication Team Docs
-fetchRows('1SSXTk-tmV89v7EzGpK81PHLlUcbZKehYkVcjvEgnsbY', 'live')
+fetchRows('1RmaiOfdvB4eiZmkaoinkWwsvLKSQIgANjVdsONP5vbI', 'live')
   .then(({ data }) => {
     const tracksObject = data.map(mapHtmlToTracks).reduce((prev, curr) => {
-      return {...prev, ...curr}
+      return { ...prev, ...curr }
     }, {})
-    
+
     fs.writeFileSync(
       `${__dirname}/constants/generated-tracks.js`,
       `export const tracks = ${JSON.stringify(tracksObject, null, 4)}`
